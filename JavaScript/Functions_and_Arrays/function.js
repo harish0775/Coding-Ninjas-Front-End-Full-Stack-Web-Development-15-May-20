@@ -34,4 +34,4 @@ showAlert();
     
 
      // or var result = sum(5,6); 
-    // console.log(result);  
+    // console.log(result);   
