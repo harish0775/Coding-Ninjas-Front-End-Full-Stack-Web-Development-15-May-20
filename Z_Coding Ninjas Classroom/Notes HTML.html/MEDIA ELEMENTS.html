@@ -1,0 +1,153 @@
+ 
+
+
+
+                <----------Media Element-------->
+
+
+
+               The multimedia is a different content than text that 
+
+                      uses 
+
+                          sound,
+
+                          music, 
+
+                          videos, 
+
+                          movies,
+
+                          animations
+                                           , etc. on the web.
+
+
+
+             Multimedia is represented in multiple forms(eg., video, audio) and in multiple formats
+             (eg., mp3, .avi).
+
+              We can add audio, video and figures with the help of HTML media elements.
+
+
+
+    -----:Audio and Video Element:-----
+
+                 ● HTML can embed audios and videos directly in a web page without any external support. 
+
+                 ● You can add audios and videos in a standard way. 
+
+                 ● The <audio> element is used to add audio in web page. 
+
+                 ● The <video> element is used to add video in web page. 
+
+                 ● These elements are not sufficient to add the media. 
+
+                 ● We need to control the media as well. 
+
+                 ● there are several tags and attributes that are required to fully add the media. 
+
+                ● The <audio> and <video> are same in the way the content is added to it and only tag name 
+                	is different. 
+
+                    	  Eg. 
+
+                    	  to add audio to the web page, we use the following code:
+										
+										<audio controls>
+										<source src="cn.avi" type="audio/avi">
+										<source src="cn.mp3" type="audio/mpeg">
+										Your browser does not support the audio element.
+										</audio>
+						Here,
+
+							 multiple source tags are used so that the audio plays if any one of the format
+							is supported by the browser. Else, the text message will be shown. 
+
+
+						-----:controls Attribute:---
+
+					           ➢ The controls attribute is necessary to add controls to the audio/video.
+
+					               like
+					                     play 
+
+					                     pause,
+
+								         volume 
+
+								                       .  
+
+
+						This gives you the ability to control the video and audio content.
+
+
+
+			          ---:source Tag:---
+
+
+			               <source> element is used to serve the same media content in multiple
+
+                            formats so that different browsers can run any of the file that it supports.
+
+                             It is an empty element.
+
+
+                      --:src Attribute:-- 
+
+		                      The src attribute is used to specify the URL of the media file that is needed 
+
+		                      to be played. 
+
+		                      This can have absolute or relative path.
+
+
+		                ----:type Attribute:---
+
+
+		                The type attribute is used to specify the media type of the media resource. 
+
+		                The way we define a type for video is 
+
+		                                 like: video/mp4, etc. 
+
+
+		                                   and for audio
+                                                      like: audio/mpeg
+
+
+
+
+
+
+     ----:figure Element:----
+
+
+
+                     The <figure> is a new tag introduces in HTML5. 
+
+                      This element specifies self- contained content, 
+
+                             like 
+
+                                  illustrations 
+
+                                   diagrams 
+
+                                   photos 
+
+                                   code listings, etc. 
+
+                                 Eg:
+										<figure>
+										<img src="images/logo.png" alt="The Pulpit Rock" width="304"
+										height="228">
+										<figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+										</figure>
+
+       
+
+          ----:figcaption Element:---
+							
+							The <figcaption> tag defines a caption for a <figure> element.
+
+							 This can be  placed anywhere inside the figure element.

@@ -1,0 +1,184 @@
+
+
+            <--------POSITION------->
+
+
+            The position property is for specifying the positioning of element on the page.
+            
+             This fixes the position of element relative to web page or parent element.
+             
+              The position property provides 5 ways to position the element
+								
+
+									● static - default
+									● relative
+									● absolute
+									● fixed
+									● sticky
+
+
+                        This property is not enough to manipulate the position of the element. The position property just specifies the behaviour.
+
+                         Therefore, to move the elements 
+
+                 
+
+        we have these 4 properties:
+
+
+						● left - shifts the element with respect to the left side of the element
+						
+						● right - shifts the element with respect to the right side of the element
+						
+						● top - shifts the element with respect to the top side of the element
+						
+						● bottom - shifts the element with respect to the bottom side of the element
+
+				The above properties, 
+
+				    i.e.
+
+				          left 
+
+				          right 
+
+				           top 
+
+				           bottom
+
+
+   have numerical values in both relative and absolute units. 
+
+        The value can be both positive and negative. 
+
+        They also work differently depending on the position value. 
+
+        Eg.   
+            for the layout like this:
+
+								<div class="outer">
+								  <h2>POSITION property</h2>
+								      <span class="inner">This is relative to viewport</span>
+								</div>
+
+
+					and making div’s position relative with css code like: 
+
+					.outer {
+								position: relative;
+								width: 250px;
+								height: 150px;
+								border: 1px solid red;
+								padding: 10px;
+						}
+				      .inner {
+								border: 1px solid blue;
+								padding: 5px;
+								top: 10px;
+								left: 40px;
+					  }
+
+
+
+---: static :---
+
+				The static value positions the element according to the normal flow of the page
+				   and not in any special way. 
+
+				 This is the default property.
+
+				 Properties like:- 
+				      top 
+
+				      right 
+
+				       bottom 
+
+				       left  
+				              do not work when this is used.
+
+				        You can alternatively use position: static; 
+
+				        to apply this property and the layout will look same. 
+		
+
+
+-----:relative:----
+
+
+
+				The relative value positions the element relative to its first positioned 
+				(i.e. not static) ancestor element. It is similar to the static value, but now the properties like
+				top, right, bottom, left will work on the element. The original position of the element remains occupied. Use position: relative; to apply this property and the layout will look like this:
+				9.3. absolute
+				The absolute value positions the element relative to its closest positioned ancestor.
+				If there is no positioned ancestor, then the position would be relative browser's
+				window. The element doesn't occupy its original space. Use position: absolute; to apply this property and the layout will look like this:
+				9.4. fixed
+				The fixed value fixes the position of the element relative to the viewport, which
+				means it always stays in the same place even if the page is scrolled. Also, the element does not leave a gap in the page, i.e. it will overlap with other
+				element. Use position: fixed; to apply this property and the layout will look like this:
+				Notice, the ending of black line is the start of the web page and the distance
+				between the black line and the <span> is 10px. 9.5. sticky
+				The sticky value is initially positioned as in the HTML source. It is then fixed
+				relative to the viewport as soon as it reaches the desired position. A sticky element toggles between relative and fixed, depending on the scroll
+				position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). Use position: sticky; to apply this property and the layout initially be same as
+				that of relative positioned and moves with the page on scrolling until the final
+				position (i.e. same as fixed position) is reached. 
+
+
+
+
+				10. BOX MODEL
+Box model describes the layout of the elements. The HTML elements are considered as
+boxes. The CSS box model is essentially a box that wraps around every HTML element. It consists
+of: margins, borders, padding, and content. The image below illustrates the box model:
+The total width of the element is equal to the total of the horizontal margin, border and
+padding, and content width of element. The total height of the element is equal to the total of the horizontal margin, border and
+padding, and content height of element. 11. MIN/MAX WIDTH
+Width property is used to set the width of the element, to a specific size. But the size of the
+becomes fixed with this and this brings problem of in smaller devices. The browser then gets
+a scrollbar to scroll through the entire content. So, to overcome this problem, CSS provides max-width property. This specifies the
+maximum width that an element can have. If the browser window's width becomes smaller
+than the width of the element, the element width adjusts with the browser width. But, a very small element is very difficult to read. So, another property min-width is
+provided by the CSS that specifies the minimum width that the element can have.
+Eg., we have two divs like this:
+<div id="div1">
+<div id="div2">This example shows how the max and min width property
+works.</div>
+</div>
+and the CSS is applied to them:
+#div1{
+background-color:lightgrey;
+}
+#div2 {
+max-width: 400px;
+min-width:300px;
+}
+will show like this when the browser width is more than 400px:
+and like this when the browser width is less than 300px:
+12. OVERFLOW
+The overflow property is used to specify what happens if the content of an element
+overflows, i.e. the content’s height or width is larger than element’s height or width. This property adds a scroll-bar or clips the content when an element's content is too big to
+fit in a specified area. The values that the overflow property can take are:
+● visible -this is default value. The content overflows and seen outside the box
+● hidden - only the content that fits inside the box is visible and the overflow is
+clipped
+● scroll - all the content is visible through a scroll-bar added to the box
+● auto - a scroll-bar gets added if content overflows
+Eg., when we a larger content than that can be fitted inside the element like:
+<div>HTML is short for HyperText Markup Language. Basically, it’s the “code” behind
+every webpage – even this one. If you’re just beginning to learn HTML, let us tell
+you that it’s a fairly easy task. HTML, without styling, can’t do anything more
+than setting a layout, drawing a table, or creating frames – but it is handy as it
+helps you structure the content correctly, which is important when you sit down to
+add style to your HTML.</div>
+with fixed height and width as:
+div {
+background-color: aliceblue;
+width: 200px;
+height: 200px;
+overflow: scroll;
+}
+will show the box in the browser like this:
+NOTE: The overflow property only works for block elements with a specified height

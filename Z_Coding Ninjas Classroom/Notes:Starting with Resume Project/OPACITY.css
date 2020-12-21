@@ -1,0 +1,21 @@
+
+
+            <-----------opacity--------------------->
+
+
+
+
+		The opacity property is used to set the transparency of an element.
+
+		This can take a value ranging from (0.0 - 1.0).
+
+		 The lower the value, the more transparent the element will become.
+
+		
+		So, when adding transparency to the background of an element,
+		 all of its child elements also	inherit the same transparency. 
+		 This makes the text inside transparent as well.
+
+
+		  To provide transparency to only the background color,
+		   you can use 'rgba()' property to provide color with alpha value.

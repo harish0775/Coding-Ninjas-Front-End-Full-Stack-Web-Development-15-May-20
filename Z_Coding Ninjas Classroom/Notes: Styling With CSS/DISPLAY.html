@@ -1,0 +1,155 @@
+
+
+
+
+              <-----Display------>
+
+
+
+              The display property is a very important CSS property for controlling layout. 
+
+              It specifies if/how an element is displayed.
+
+              Many of the elements have default display property value as inline or block 
+              (inline and block elements in HTML).
+
+       
+
+         The display property has following values:
+									
+
+										● inline
+										● block
+										● inline-block
+										● none
+
+
+
+
+---- : Inline Display :--- 
+
+
+				   When display: inline; is used these following happens to the element:
+				
+				● element doesn't starts in a new line
+				
+				● only takes up as much width as necessary, so cannot set height and width
+				
+				● the vertical margins do not work
+				
+		Eg.
+
+		   originally a list looks like this:
+
+				making the list inline:
+							
+							li { 
+							     display: inline; 
+						    }
+
+
+	
+		and the list will now be shown in a single line like this(the space before the list is
+				because ul element have a default padding value):
+
+
+
+				
+
+-----: Block Display :----
+
+
+				When display: block; is used these following happens to the element:
+				
+				● element starts in a new line
+				
+				● takes up full-width of the parent element
+				
+		Eg.
+		      originally the 2 spans look like this:
+
+				<span>The quick brown fox</span> <span>jumps over the lazy dog!</span>
+				adding the block property to them like this:
+
+				li { 
+
+				display: block; 
+
+			}
+				and it will be shown like this now:
+		
+
+
+
+-----: Inline-block Display :---- 
+
+
+
+
+				display: inline-block; is a combination of the properties of the inline and blockelements. 
+
+
+		These are the advantages of inline-block:
+				
+				● height and width of the element can be set now
+				
+				● vertical margins are allowed
+				
+				● element can sit next to each other
+				
+
+
+		  There is a space between the elements next to each other
+				
+
+
+
+
+	Eg.     there are two empty div element:
+								
+
+
+								<div class="div"></div>
+								<div class="div"></div>
+
+
+				and the following properties have been applied to them: 
+
+
+				.div {
+
+					display: inline-block;
+					border: 1px dashed black;
+					width: 100px;
+					height: 100px;
+					background-color: lightgrey;
+			}
+
+				two divs will be displayed next to each other like this:
+
+				You can notice a space between these 2 divs. It is because inline elements have a word-spacing in them and it is also a default in inline-block elements.
+
+
+
+
+
+
+
+-----:  No Display :---- 
+		
+
+				The display:none; property hides the elements in a browser.
+
+				 It actually removes the element from the HTML page and nothing is shown in its place. 
+
+				     This is similar to another property 
+
+				     - visibility:hidden;
+
+
+			  . The difference is that the element is not removed from the page and still occupies the space.
+
+
+
+
+

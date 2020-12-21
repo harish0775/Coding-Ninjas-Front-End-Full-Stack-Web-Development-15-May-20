@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="icon" href="file:///home/harish/Harvard%20University/photo-1517694712202-14dd9538aa97.jpeg" type="image/x-icon" />
+</head>
+<body>
+                             <ul>
+								<li>first item</li>
+								<li>second item
+								 <!-- Look, the closing </li> tag is not placed here! -->              
+								
+							<ul>
+
+								<li>second item first subitem</li>
+								<li>second item second subitem
+								       <!-- Same for the second nested unordered list! -->
+							<ul>
+								<li>second item second subitem first sub-subitem</li>
+								<li>second item second subitem second sub-subitem</li>
+								<li>second item second subitem third sub-subitem</li>
+							</ul>
+
+							</li>
+							<!-- Closing </li> tag for the list that contains the third unordered
+list -->
+<li>second item third subitem</li>
+			</ul>
+					</li><!-- Here is the closing </li> tag -->
+					<li>third item</li>
+			</ul>
+
+
+
+			NOTE:
+			      There is no limitation to the depth of nested lists.
+
+			      Although it is true for all paired/container tags, 
+			          but we should be careful in nesting elements inside each other and 
+			               should only do for something meaningful.
+
+
+			               <select name="select" size ="">
+								<option value="value1">Value 1</option>
+								<option value="value2" selected>Value 2</option>
+								<option value="value3">Value 3</option>
+								</select>
+
+									<select>
+									<optgroup label="Books">
+										<optgroup label="Books">
+									<option value="html">HTML</option>
+									<option value="css">CSS</option>
+									<optgroup label="css">
+										<option value="html">HTML</option>
+									<option value="css">CSS</option>
+										</optgroup>
+									</optgroup>
+									</optgroup>
+									<option value="html">HTML</option>
+									<option value="css">CSS</option>
+									</optgroup>
+									<optgroup label="Snippets">
+									<option value="git">Git</option>
+									<option value="java">Java</option>
+									</optgroup>
+								</select>
+								<button onclick="location.href='http://google.com';" >Click	ME</button>
+
+								<figure>
+										<img src="file:///home/harish/Harvard%20University/photo-1517694712202-14dd9538aa97.jpeg" alt="The Pulpit Rock" width="304"
+										height="228">
+										<figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+										</figure>
+
+</body>
+</html>

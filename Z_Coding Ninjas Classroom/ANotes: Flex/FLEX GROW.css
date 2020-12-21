@@ -1,0 +1,49 @@
+
+
+
+  <---------------: flex-grow :--------------------->;
+
+
+
+The flex-grow property specifies the ratio with which a flex item grows relative to the other
+ 
+  flex items,  when there is some extra space available. 
+
+  This controls the extend how much a flex-item grows, with respect to other flex items. 
+
+  This takes up any value from 0(zero) to any  positive number.
+
+           0(zero) means that the flex items' width would not change. 
+
+
+    Eg., for a simple layout:
+
+			<div class="flex-container">
+
+					<div id="div1">div1</div>
+
+					<div id="div2">div2</div>
+
+					<div id="div3">div3</div>
+
+			</div>
+
+the css applied is: 
+
+		.flex-container { 
+
+			display:flex;
+			 width:270px;
+			  height:100px;
+			   backgroundcolor:lightgrey;
+
+	 }
+
+		.flex-container div { 
+			width:70px; 
+			margin:10px;
+	    }
+	    
+		#div1 { background-color:#7ff9ae; flex-grow:0; }
+		#div2 { background-color:#76bbfc; flex-grow:2; }
+		#div3 { background-color:#ff7f8e; flex-grow:4; }

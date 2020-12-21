@@ -1,0 +1,34 @@
+/*-----header-----*/
+#site-title a {
+    font-size: 28px;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#site-title a:hover {
+    color: #dc6520;
+}
+
+#about-site {
+    color: #3c5349;
+}
+/*-----main-----*/
+#blog-header h1 {
+    color: #13222c;
+    font-family: sans-serif;
+}
+
+#blog-content.blog-image-container{
+    width: 100%;
+}
+.h-style {
+    color: #13222c;
+}
+#header-image{
+width:100%;
+}
+/*#blog-image-container{
+    width: 100%;
+}
+*/

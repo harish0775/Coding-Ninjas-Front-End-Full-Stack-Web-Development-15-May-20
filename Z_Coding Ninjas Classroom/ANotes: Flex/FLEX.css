@@ -1,0 +1,30 @@
+
+     
+              <---------------flex-------------------->
+     display: flex; 
+
+    	display: inline-flex;
+
+
+
+
+		The Flexbox layout provides efficient way to layout, align and distribute space among items	in a container.
+
+	    This is really helpful when the size of the elements in the container is
+		unknown and/or dynamic. 
+
+		Using the flex in a container, gives the ability to alter its items width/height and order as well to best fit in the space available. 
+
+		A flex container expands items to fill available free space, or shrinks them to prevent overflow. 
+
+		The flex is a value for the display property. It has to be provided in the container for the flex to work. 
+
+		Only if it is defined inside the container, flex properties will work. Flex properties are defined on the child elements.
+
+		 To make the container to be flex, 
+
+		 add this property in the container:
+
+		  display: flex; or 	display: inline-flex;
+
+		   for the inline variation.

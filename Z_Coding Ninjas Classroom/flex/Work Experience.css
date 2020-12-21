@@ -1,0 +1,143 @@
+
+.timeline{
+	position: relative;
+	width: 100%; 
+	/*border: 1px solid black;*/
+	margin-bottom: 9px;: 
+}
+.timeline-box{
+	position: relative;
+	width:38%;
+	left:5%;  
+	min-height: 158px;
+	/*border: 2px solid black;*/
+	margin:5px;
+	border-radius: 10px;
+    box-shadow: 0px 0px 6px 4px rgba(158, 161, 154, 0.5);
+
+}
+.timeline-box:nth-child(2n){
+	left: 53%;
+}
+.timeline-box:nth-child(2n+1)::after{
+	right:-18%;
+	content: '';
+	position: absolute;
+	top:25%;
+	border-radius: 59%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	z-index:1;
+
+}
+.timeline-box:nth-child(2n)::after{
+	left: -10%;
+	content: '';
+	position: absolute;
+	top:39%;
+	border-radius: 59%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	z-index:1;
+
+}
+
+
+.timeline-divider{
+	position: absolute;
+	height: 80%;
+	width:0px;
+	border: 2px dashed blue;
+	top: 6%;
+    left: 50%;
+
+}
+
+.timeline-traveller{
+  position: sticky;
+	top: 21%;
+    left: 50%;
+   transform: rotate(90deg);
+   font-weight: 50;
+   z-index:2;
+   
+
+}
+.Isro img{
+	border-image: 1px solid cyan ;
+height: 50px;
+width: 50px;
+/*border: 2px solid red;*/
+border-radius: 13px;
+margin-top:7px;
+margin-left:6px;
+box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+
+}
+.Nasa{
+	height: 60px;
+	width:  60px;
+/*border: 2px solid red;*/
+border-radius: 13px;
+
+overflow: hidden;
+margin-top:2px;
+margin-left:4px;
+box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+
+}
+.spaceX img{
+	height: 50px;
+width: 50px;
+border-radius: 13px;
+
+overflow: hidden;
+margin-top:2px;
+margin-left:4px;
+box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+
+}
+
+.blue-origin img{
+	height: 50px;
+width: 50px;
+border-radius: 13px;
+
+overflow: hidden;
+margin-top:2px;
+margin-left:4px;
+box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}  
+
+
+.Nasatext  {
+
+  font-family: 'Consolas';
+  align-items: flex-end;
+  text-align: right;
+ /* padding-top: 10px;*/
+ margin: 3px;
+ font-family: 'Playfair Display', serif;
+
+}
+.timeline-box article{
+	font-family: 'Playfair Display', serif;
+
+}
+.heading{
+	 align-items: flex-end;
+	 margin-top: -29px;
+	 overflow: none;
+
+}
+
+
+
+
+
+
+
+
+

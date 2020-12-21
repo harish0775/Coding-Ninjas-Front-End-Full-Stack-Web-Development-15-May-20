@@ -1,0 +1,40 @@
+#lightbox{
+	height: 0px;
+	width: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	transition: all 0.1s ease-in-out;
+
+
+}
+#lightbox:target{
+	height: 30%;
+	width: 30%;
+	top: 25%;
+	left: 80%;
+background-color:lightgrey;
+padding-bottom: 90px;
+
+}
+#light{
+	height: 10px;
+	width: 0px;
+	position: fixed;
+	top: 10;
+	left: 10;
+	overflow: hidden;
+	transition: all 0.1s ease-in-out;
+
+
+}
+#light:target{
+	height: 30%;
+	width: 30%;
+	top: 25%;
+	left: 25%;
+background-color:lightgreen;
+padding-bottom: 90px;
+
+}

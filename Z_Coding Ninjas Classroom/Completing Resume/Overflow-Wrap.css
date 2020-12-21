@@ -1,0 +1,22 @@
+.color{
+	height: 300px;
+	width: 300px;
+	/*background:green;*/
+	/*overflow-wrap: break-word;*/
+}
+
+#container{
+	/*background-color: grey;*/
+
+
+}
+.container{
+border: 1px solid black;
+/*background-image: linear-gradient(red,blue);
+*//*
+background-image: linear-gradient(20deg ,red 1px,blue 350px);*/
+
+/*background: repeating-linear-gradient(9deg,red,pink 9px,lightgreen  );
+}*/
+background: radial-gradient(red 20px,pink 90px ,green ,1px,blue 5000px );
+}

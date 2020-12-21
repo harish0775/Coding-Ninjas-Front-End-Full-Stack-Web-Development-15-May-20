@@ -1,0 +1,224 @@
+  
+
+                      <-----BORDER---->
+
+
+
+
+
+
+
+
+          ●  The border property is used to set element's border.
+
+          ●  CSS borders allows you to specify the style, width, and color of an element's brder.
+
+          ●   Border is a shorthand:
+
+
+
+
+                     border-width
+
+                     border-style
+
+                     border-color
+
+
+
+           ●          also  written together --> border: 5px solid red;
+
+                       Eg.
+
+           ●      applying border property to a div like this:
+
+                      
+                       border: 5px solid red;
+
+            
+
+
+
+<----Border Width---->
+
+
+	         ● The border-width property specifies the width of the four borders.
+
+	         ●  The width can be set :
+
+	                 absolute or relative size 
+
+	                 by using one of the three
+
+             -->  predefined values: thin, medium, or thick. 
+
+
+                Eg. 
+
+                  border-width: 2px 10px 4px 20px     (clock wise)
+
+
+                  top border of 2px,
+
+                  right border of 10px
+
+                  bottom border to 4px 
+
+                  left border to 20px
+
+
+
+
+
+<----Border Style---->
+
+
+
+					    The border-style property specifies what kind of border to display.
+
+					    The values for border-style are:
+
+
+					         dotted 
+
+					         dashed 
+
+					         solid
+
+					         double
+
+					         groove 
+
+					         ridge 
+
+					         inset 
+
+					         outset
+
+					         none
+
+					         hidden. 
+
+
+				            Eg.
+
+
+				             border-style: dotted dashed solid double;, will have dotted top border, dashed right border, solid bottom border and double lined left border. 
+
+				      
+
+
+				        NOTE: 
+
+				         It is necessary to add border-style property else no other border properties will work.
+
+
+
+
+
+
+<----Border Color--->
+
+
+
+					   ● The border-color property specifies the color of the four borders.
+
+					   ● The value of the property is same as that of the color property.
+
+					     But now you can provide different color to different border sides.
+
+
+				       ● If border-color is not set, it inherits the color of the element.
+
+				          Eg. 
+
+						          border-color: red green; will have top and bottom 
+
+						          border color red and left and right border color green
+
+
+
+
+						●  you can also set border: separte
+
+						    Like :     also use any of one
+
+						            border-top: green;
+						            border-right:blue;
+						            border-bottom:grey;
+						            border-left:orange;
+
+
+
+
+
+
+
+
+
+<----Border Individual Sides ----->
+
+
+
+				 Using the border property, we are able to provide width, style and color to all the borders separately but still we have to give some value to all the sides of the border.
+
+				 CSS border also have property to give border value separately to each of the border sides. 
+
+		The border property for the sides are:
+				
+				● border-top
+				● border-right
+				● border-bottom
+				● border-left
+
+
+				This is further broken to provide style, width and color separately to the border
+				sides.
+
+		:-- Some of them are  :---
+
+					 border-top-style
+
+					 border-right-width
+
+					 border-left-color, etc.
+
+
+
+
+
+
+<----Border Radius--->
+          
+
+          The border-radius property is used to add rounded borders to an element.
+
+           You can give absolute(eg. in px) or relative(eg. in %) value to this property.
+
+
+		The border-radius can be provided in elliptical form as well. 
+
+		Therefore,
+
+		        you need to provide horizontal and vertical radius differently.
+
+
+		   This is done using a slash ("/") between horizontal and vertical radius. 
+
+
+
+
+ Here is an example:
+					
+
+
+					div {
+					border-radius: 30px/10px; /* horizontal radius / vertical radius */
+					background: teal;
+					width:20%;
+					height:20%;
+					padding:40px;
+				
+					}
+		
+		

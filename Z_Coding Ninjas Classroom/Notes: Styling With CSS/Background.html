@@ -1,0 +1,221 @@
+
+
+
+               <-------------BackGround----------------->
+
+
+
+         The background properties are used to define the background effects for elements. 
+
+         The background of an element is the total size of the element and includes padding and border but not the margin.
+
+
+
+                      :----  background(total size include): padding,border  :----
+
+
+
+
+         Backgrounds can be filled with a color or image, clipped or resized, and otherwise modified. 
+
+
+         CSS background properties:
+							
+
+								● background-image
+								● background-repeat
+								● background-position
+								● background-size
+								● background-attachment
+
+
+		Eg.
+					 the below CSS code when applied to a web page
+				
+
+					body {
+							background-image: url("https://blog.codingninjas.in/wpcontent/uploads/2017/01/cropped-Final_logo_switchtocode-01.png"), lineargradient(#a3f7ff, #fff58e);
+
+							background-repeat: repeat-x;
+
+							background-position: center center;
+
+							background-attachment: fixed;
+					}
+					
+
+					NOTE:
+
+					     You can see about other background properties from
+             
+                https://developer.mozilla.org/en-US/docs/Web/CSS/background
+
+
+
+
+
+<-----background-color----->
+
+
+
+			The background-color property sets the background color of an element.
+
+			 It has the	same value as that of the color property. 
+
+			 Eg.
+			      <p style="background-color: #afcbff;"> 
+
+			      	Don’t you just love exploring
+			beautiful and neat sites with a clean user interface? While most of us would
+			reply with an assertive ‘YES,’ little, do we know.
+			      </p>
+
+
+
+
+<------background-image---->
+
+
+
+			         The background-image property is used to specify an image to use as the
+			background of an element. 
+
+			This can set one or more background images for an element. 
+
+			By default, a background-image is placed at the top-left corner of an element, and is repeated so it covers the entire element both vertically and horizontally. 
+
+
+	The values it can take are:
+
+
+			● url('URL') - specifies the URL of the image. You can specify more than one
+			image by separating the URLs with a comma
+
+			● none - this is default value. No background image will be displayed
+
+			● linear-gradient() - sets a linear gradient as the background image. At least two
+			colors needed to be mentioned (default direction is top to bottom)
+
+			● radial-gradient() - sets a radial gradient as the background image. At least two
+			colors needed to be mentioned (default is from center to edges)
+
+			● repeating-linear-gradient() - repeats a linear gradient
+
+			● repeating-radial-gradient() - repeats a radial gradient
+			In the above example, we are using both the image and linear-gradient together. Try to swap the sequence of image and gradient and see what happens.
+
+
+
+
+
+
+<-----background-repeat----->
+
+         
+
+			The background-repeat property is used to specify how/if a background image will
+			be repeated. 
+
+			By default, a background image repeats both vertically and horizontally, so
+			background-repeat will how will the image repetition works. 
+
+
+	The values this property can take are:
+
+
+			● repeat - this is default value. The background image is repeated both vertically
+			and horizontally. The last image will be clipped if it does not fit
+			
+			● repeat-x - the image is repeated only horizontally
+			
+			● repeat-y - the image is repeated only vertically
+			
+			● no-repeat - the image will only be shown once
+			
+			● space - the background-image is repeated without clipping. The space
+			remaining is distributed evenly between images with first and last images
+			pinned to sides of the element
+			
+			● round - the image is repeated and shrink or stretch to fill the space.
+
+
+
+
+
+
+
+
+<----background-position--->
+
+
+      ● The background-position property is used to specify the initial position of a
+        background image.
+
+	 ●  By default, a background image is placed at the top-left corner of an element and
+		you can change the position with background-position property. 
+
+	 ●   The values this property can take are(X represents horizontal position and Y
+		represents vertical position):
+
+	 ●   X Y - they both can each take value from one of the following
+
+	    - left, right, top, bottom, center.
+
+	     If one value is specified, the other value will be "center" 
+
+	 ● Xpos Ypos - specifies the horizontal and vertical position relative to the
+		   viewport. 
+
+		Units can be any of the CSS units. If you only specify one value, the
+		other value will be 50%.
+
+
+
+
+
+<-----background-size---->
+
+
+
+
+        The background-size property is used to specify the size of the background images. 
+
+
+       
+       The values it can take are:
+			
+			● auto - this is a default value. The image is displayed in its original size
+			
+			● length - sets the width and height of the background image. The first value
+			sets the width, the second value sets the height
+
+			● percentage - sets the width and height of the background image in percent. The first value sets the width, the second value sets the height. 
+
+			      If only one
+			           value is given, the second is set to "auto" 
+
+			● cover - resizes the background image to cover horizontal width of container
+
+			● contain - resizes the background image to make sure the image is fully visible
+
+
+
+
+
+<------background-attachment----->
+
+
+	 The background-attachment property is used to specify whether a background
+	 image scrolls with the rest of the page, or is fixed. 
+
+
+
+
+	The values it can take are:
+
+
+			● scroll - this is default value. The background image will scroll with the page
+			
+			● fixed - the background image will not scroll with the page
+			
+			● local - the background image will scroll with the element's contents

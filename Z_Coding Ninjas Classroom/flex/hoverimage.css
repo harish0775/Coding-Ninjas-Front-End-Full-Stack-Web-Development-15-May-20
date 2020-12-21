@@ -1,0 +1,92 @@
+#container{
+height: 500px;
+    width: auto;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+#image{
+height: 200px;
+width: 200px;
+background-image:url(../image/webwindow.png);
+ background-size: cover;
+}
+#pic{
+height: 200px;
+width: 200px;
+
+background-image:url(../image/websitebanner.jpg);
+ background-size: cover;
+}
+
+#photo{
+height: 200px;
+width: 200px;
+background-image:url(../image/portfoliobook.jpg);
+ background-size: cover;
+}
+
+#story{
+height: 200px;
+width: 200px;
+background-image:url(../image/Web-mobile-development-banner-.jpg);
+ background-size: cover;
+}
+
+
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility:hidden;
+  border-radius: 15px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.4;
+}
+
+
+
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+
+
+
+.text {
+ /* background-color: #4CAF50;*/
+  color: white;
+  font-size: 16px;
+
+  padding: 4px 5px;
+
+}

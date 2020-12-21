@@ -1,0 +1,57 @@
+
+                                          <NESTING ELEMENT>
+
+				HTML elements can be nested i.e. elements can contain elements. 
+				Actually, all HTML documents consist of nested HTML elements.
+
+
+
+
+				 Eg:
+
+
+
+
+
+
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+                             <ul>
+								<li>first item</li>
+								<li>second item
+								 <!-- Look, the closing </li> tag is not placed here! -->              
+								
+							<ul>
+
+								<li>second item first subitem</li>
+								<li>second item second subitem
+								       <!-- Same for the second nested unordered list! -->
+							<ul>
+								<li>second item second subitem first sub-subitem</li>
+								<li>second item second subitem second sub-subitem</li>
+								<li>second item second subitem third sub-subitem</li>
+							</ul>
+
+							</li>
+							<!-- Closing </li> tag for the list that contains the third unordered
+list -->
+<li>second item third subitem</li>
+			</ul>
+					</li><!-- Here is the closing </li> tag -->
+					<li>third item</li>
+			</ul>
+
+
+
+			NOTE:
+			      There is no limitation to the depth of nested lists.
+
+			      Although it is true for all paired/container tags, 
+			          but we should be careful in nesting elements inside each other and 
+			               should only do for something meaningful.
+</body>
+</html>

@@ -1,0 +1,73 @@
+/*
+.flex-container { 
+
+		display:flex;
+		 width:auto; 
+		 height:100px; 
+		 background-color:lightgrey; 
+
+	}
+	.flex-container div { 
+
+		width:280px; 
+		margin:10px;
+	 }
+	 
+	#div1 { 
+		background-color:#7ff9ae;
+	 flex-shrink:3;
+	}
+
+	#div2 { 
+		background-color:#76bbfc; 
+		flex-shrink:2; 
+	}
+	#div3 { 
+		background-color:#ff7f8e;
+		 flex-shrink:1;
+
+ }
+/*
+
+
+ NOTE: Remember that the default behaviour will stretch the items only if the height of the
+item is not fixed. But if the size is fixed, all the other values other than the stretch
+value will work.
+
+
+*/
+
+
+
+
+/*.flex-container { display:flex; width:300px; height:150px; align-items:baseline; 
+	background-color:lightgrey; }
+	
+.flex-container div { width:60px; min-height:70px; }
+#div1 { background-color:#7ff9ae; }
+#div2 { background-color:#76bbfc; }
+#div3 { background-color:#ff7f8e; }
+*/
+
+.flex-container { display:flex; width:270px; height:250px; flex-wrap:wrap;
+background-color:lightgrey; }
+.flex-container div { width:70px; min-height:70px; margin:10px; }
+.div1 { background-color:#7ff9ae; }
+.div2 { background-color:#76bbfc;align-self: flex-start; }
+.div3 { background-color:#ff7f8e; }
+/*
+.flex-container{
+	display: flex;
+	width: 270px;
+	height: 250px;
+	flex-wrap: wrap;
+	background-color: lightgrey;
+}
+	.flex-container div{ 
+		width: 70px;
+		min-height: 70px;
+		margin: 10px;
+		
+
+	} 
+}*/

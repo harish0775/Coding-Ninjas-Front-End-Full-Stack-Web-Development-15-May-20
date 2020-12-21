@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <link rel="stylesheet" type="text/css" href="port401"> -->
+	<style type="text/css">
+		fieldset{
+			/*background-color: lightgrey;
+			padding: 30px;
+			border-radius:solid ;*/
+			 border-radius: 30px;
+  background: #73AD21;
+  padding: 1px;
+  width: 15vh;
+  height: 90px;
+
+position: absolute;
+bottom:365px; left: 0px; right:90px;
+
+
+ /* border: 3px solid #73AD21;*/
+		}
+/*		fieldset.relative {
+  position: relative;
+  left: 90px;
+  border: 3px solid #73AD21;
+}
+*/
+
+	</style>
+	<title>Forms</title>
+</head>
+<body>
+<div>
+	<h2>button </h2>
+<button class="favorite styled"
+        type="button">
+    Add to favorites 
+</button>
+
+
+
+<h2>label</h2>
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+
+<form>
+  <fieldset>
+    <legend>Choose your favorite monster</legend>
+
+    <input type="radio" id="kraken" name="monster">
+    <label for="kraken">Kraken</label><br/>
+
+    <input type="radio" id="sasquatch" name="monster">
+    <label for="sasquatch">Sasquatch</label><br/>
+
+    <input type="radio" id="mothman" name="monster">
+    <label for="mothman">Mothman</label>
+  </fieldset>
+</form>
+</div>
+</body>
+</html>

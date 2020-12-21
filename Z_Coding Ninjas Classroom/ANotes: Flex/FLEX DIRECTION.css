@@ -1,0 +1,94 @@
+      
+
+
+      <------------FLEX DIRECTION------------->
+
+
+  The flex-direction property defines in which direction the container lays out the flex-items.
+               
+     It may take 4 values:
+
+               ● row - default
+
+               ● column
+
+               ● row-reverse
+
+               ● column-reverse
+
+ The flex-direction property lays out the flex-items either horizontally, vertically or reversed
+               in both directions.
+
+      The horizontal axis is called main-axis and vertical axis is called cross axis.
+
+      Eg., for the layout like this:
+
+               <div class="flex-container">
+               <div id="div1">div1</div>
+               <div id="div2">div2</div>
+               <div id="div3">div3</div>
+               </div>
+               we can use like this: 
+
+               .flex-container { 
+                    display:flex; 
+                    width:250px; 
+                    height:250px;
+                     backgroundcolor:lightgrey; 
+           }
+               .flex-container div { 
+                    width:70px;
+                     height:70px; 
+               }
+
+               #div1 { 
+                     background-color:#7ff9ae; 
+               }
+               #div2 { 
+                    background-color:#76bbfc;
+                }
+               #div3 { 
+                    background-color:#ff7f8e; 
+               }
+
+
+     ---:row:----- 
+                       flex-direction: row;
+ 
+
+ 
+               The row value stacks the flex items horizontally, from left to right. 
+
+               For forward direction, 
+                   add the flex-direction: row; to the flex-container class.
+
+               It will not change anything as this is the default value and the layout will still look
+               the same.
+   
+
+    ----:colomn:------   flex-direction: column ;
+
+ The column value stacks the flex items vertically, from top to bottom.
+
+  For downward direction, add the flex-direction: column; to the flex-container
+
+
+
+
+ ------:row-reverse:------ flex-direction: row-reverse;
+
+
+The row-reverse value stacks the flex items horizontally, from right to left. 
+
+For backward direction, add the flex-direction: row-reverse; 
+
+to the flex- container class.
+
+
+ 
+ .........:column-reverse:---------- flex-direction: column-reverse;
+
+
+ The column-reverse value stacks the flex items vertically,  from bottom to top. 
+
+ For upward direction, add the flex-direction: column-reverse;

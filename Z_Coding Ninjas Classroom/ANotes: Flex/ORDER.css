@@ -1,0 +1,75 @@
+
+
+
+     <--------------ORDER------------------>
+
+
+
+ The order property is used to specify the order of the flex items in the flex container. 
+
+ This property value must be a 
+
+    whole number. By default, the number is 0(zero). 
+
+    The higher the number the latter would the flex item appear in the flex container. 
+
+    The flex items are displayed in the order like:
+
+	● first the items not having order property or order:0; 
+
+	   property are displayed in sequence in which they appear in the source order. 
+
+	● then the items are displayed in ascending order of the value of the order property.
+
+	 The items having the same order value are displayed in the sequence in which they
+
+	appear in the source order. Eg., for the layout:
+
+	<div class="flex-container">
+
+	<div class="div1">div1</div>
+
+	<div class="div2" style="order:0;">div2</div>
+
+	<div class="div3" style="order:3;">div3</div>
+
+	<div class="div1" style="order:3;">div4</div>
+
+	<div class="div2">div5</div>
+
+	<div class="div3" style="order:2;">div6</div>
+	</div>
+
+	the css is applied to this as:
+
+
+	 .flex-container {
+
+	  display:flex; 
+      
+      width:400px;
+
+       height:100px; 
+
+       backgroundcolor:lightgrey; 
+   }
+	.flex-container div { 
+		width:70px; 
+		min-height:70px;
+		 margin:10px; 
+
+	}
+	.div1 {
+	     background-color:#7ff9ae; 
+	 }
+	.div2 { 
+		    background-color:#76bbfc; 
+		}
+	.div3 {
+	         background-color:#ff7f8e; 
+	     }
+
+
+
+
+	     

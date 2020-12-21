@@ -1,0 +1,58 @@
+
+----------------:align-content:------------------
+
+The align-content property is used to align the flex lines,
+
+      i.e., multiple lines of flex items.
+
+      This property aligns flex lines when there is extra space in the cross-axis, 
+
+      similar to how justify-content aligns individual items within the main-axis
+
+ Align-content can be set to any of these values:
+		
+		● flex-start
+		● flex-end
+		● center
+		● space-between
+		● space-around
+		● stretch - default
+		
+		Eg., for the layout like this:
+		<div class="flex-container">
+		<div class="div1">div1</div>
+		<div class="div2">div2</div>
+		<div class="div3">div3</div>
+		<div class="div1">div4</div>
+		<div class="div2">div5</div>
+		<div class="div3">div6</div>
+		</div>
+
+		we apply this css to it: 
+
+		.flex-container { display:flex; width:270px; height:250px; flex-wrap:wrap;
+	background-color:lightgrey; 
+}
+	.flex-container div { 
+		width:70px; min-height:70px; margin:10px; 
+	}
+	.div1 { background-color:#7ff9ae; }
+	.div2 { background-color:#76bbfc; }
+	.div3 { background-color:#ff7f8e; }
+
+
+	NOTE: This property works only when there are multiple lines of flex items. So, it has no effect
+when there is only one line of flex items.
+
+
+-----------:stretch:----------- align-content: stretch;
+
+
+		The stretch value stretches the flex items present in multiple lines to fill the
+              container equally along the cross axis. 
+
+            This is the default value. Else 
+
+            use align-content: stretch; 
+
+            

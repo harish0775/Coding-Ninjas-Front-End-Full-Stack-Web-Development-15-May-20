@@ -1,0 +1,913 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #19192E;
+    font-family: verdana;
+    @import url('fontawesome-free-5.13.0-web/css/fontawesome.css');
+}
+/*-----------------NAVBAR-----------------*/
+.top_nav_bar > div {
+  display: inline-block;
+}
+.top_nav_bar {
+        margin-top: -1px;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(90deg,#001741, #8E0E00 ,#525e56, #a7d1c0,#001741);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+
+
+}
+
+
+.logo_with_text {
+
+}
+
+
+
+.logo_with_text > div{ 
+    vertical-align: middle;
+    display: inline-block;
+
+
+}
+.website_logo a img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    /*animation-name: rotating;*/
+}
+
+.website_name  h4{
+   margin: 1px;
+}
+
+.website_name  h6{
+   margin: 7px;
+}
+
+.favs{
+
+    animation-name: flexible;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    perspective: 10000px;
+    transform-style: preserve-3d;
+    animation-iteration-count: infinite;
+
+}
+.search_bar{
+    width: 20%;
+    position: relative;
+   margin-left: 45%;
+  
+}
+.search_bar input{
+      width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 18px;
+    border: none;
+    padding: 5px;
+    font-weight: 500;
+     text-align: start;
+    transition: all ease-in-out 0.1s;
+    overflow: none;
+    word-spacing: normal;
+    text-shadow: none;
+    cursor: text;
+    border-width: 2px;
+   
+
+}
+          /*     Search bar icon  */
+.search_bar > div:nth-child(1) {
+    display: inline-block;
+    position: absolute;
+    width: min-content;
+    left: 5%;
+    top: 10%;
+    transition: all ease-in-out 0.1s;
+}
+             /* mic icon */
+.search_bar > div:nth-child(3) {
+    display: inline-block;
+    position: absolute;
+    width: min-content;
+    right: 0%;
+    top: 10%;
+    transition: all ease-in-out 0.1s;
+}
+input:focus {
+    outline: none;
+}
+@keyframes ringing_bell {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+.bell_icon img{
+    width: 30px;
+    height: 30px;
+    
+    animation-name: ringing_bell;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+
+}
+
+.bell_icon{
+
+/*margin-right: -10;*/
+
+
+}
+
+.User_profile img{
+
+   width: 45px;
+    height: 45px;
+    border-radius: 100%;
+
+}
+
+
+
+
+
+
+/*-----------------MAIN-----------------*/
+
+main {
+    
+
+    margin: 5px;
+    height: auto;
+    background: #19192E;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    font-family: verdana;
+    font-size: 12px;
+    max-height: 81vh;
+
+  
+}
+
+.section1 {
+   
+    margin: 5px;
+    height: auto;
+    overflow: inherit;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.label {
+  
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 40px;
+}
+
+.genres {
+    margin: 30px;
+    margin-top: 20px;
+    background-image: linear-gradient(45deg, black, transparent);
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.genres .box {
+   
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 5px 5px 8px black;
+
+}
+
+.genres .box img {
+    object-fit: cover;
+    height: 215px;
+    border-image: 10px;
+}
+
+.genres .box:hover img:hover {
+/*  transition: 0.8s ease-out;*/
+    box-shadow: 0px 0px 15px cyan;
+    /*transform: scale(1.05);*/
+    
+}
+
+.intro {
+    flex: 3;
+    color: white;
+}
+
+button {
+    color: white;
+    font-weight: 600;
+    background: transparent;
+    padding: 5 20 5 20;
+    margin: 10px;
+}
+
+button:hover {
+    color: black;
+    background: white;
+    padding: 5 20 5 20;
+    margin: 10px;
+    transform: scale(1.1);
+}
+
+/*-----------------STATION-----------------*/
+
+
+
+.station {
+    margin: 30px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 30px;
+    display: flex;
+    background-image: linear-gradient(to right, #272746, #581845);
+    opacity: 0.5;
+    border-radius: 8px;
+    height: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.station:hover {
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    display: flex;
+    background-image: linear-gradient(to right, cyan, #581845);
+    opacity: 1;
+    border-radius: 8px;
+    transition: 0.1s ;
+    height: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+.station .queue {
+    margin-top: -4px;
+
+}
+
+.station .queue:hover {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 0px;
+
+}
+.station .fa-heart {
+ margin-left: 420px;
+}
+.station .fa-heart {
+    cursor: pointer;
+    padding: 15px;
+}
+.user .disc{
+    width: 45px;
+    height: 45px;
+}
+.queue:hover{
+    width: 100%;
+    height: 70px;
+    margin-top: 0px;
+
+}
+/*-----------------QUEUE-----------------*/
+
+
+
+
+.section2 {
+    height: auto;
+    width: 25%;
+    margin: 5px 5px 5px 0px;
+    background: #1D1D36;
+    font-family: verdana;
+    overflow: hidden;
+}
+
+.queue {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+.queue .box {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fa-heart {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.artist{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    margin-top: 0px;
+    margin-left: 12px;
+    margin-bottom: 0px;
+    flex-direction: row;
+    overflow: hidden;
+}
+.artist:hover{
+    height: 75px;
+    background: red;
+}
+.artist .box {
+    height: 70px;
+    width: 70px;
+    margin: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fa-plus {
+    cursor: pointer;
+}
+
+.fa-ellipsis-h {
+    margin-top: -10px;
+    margin-left: 7px;
+}
+
+
+
+/*-----------------FOOTER-----------------*/
+
+
+
+
+footer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #696982;
+    z-index: 2;
+}
+
+.content {
+    font-size: 17px;
+    color: white;
+    margin-left: 20px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#dispbox {
+    height: 15px;
+    width: 200px;
+    margin-left: 0px;
+    box-shadow: none;
+}
+
+.content .box {
+    height:100px;
+    width: 60px;
+    align-content: center;
+    margin: 0px;
+    margin-top: -1px;
+    cursor: pointer;
+}
+
+.slidecontainer {
+    width: 600px;
+}
+
+.slider {
+    width: 100%;
+    background: #4CAF50;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.fa-forward {
+    margin-right: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.fa-play {
+
+    margin-right: 20px;
+    font-size: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+
+.fa-random {
+    margin-right: 20px;
+    margin-top: 23px;
+    cursor: pointer;
+}
+
+.fa-redo {
+    margin-right: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.fa-share-alt {
+    margin-right: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.fa-volume-up {
+    margin-right: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*-----------------MEDIA QUERY-----------------*/
+
+
+/*-----------------MEDIA QUERY-----------------*/
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    /*-----------------section1_1-----------------*/
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .logo{
+    margin: inherit;
+    object-fit: contain;
+    max-width: 48px;     
+    }
+
+    .box {
+        width: 27%;
+        height: 27%;
+        margin-bottom: 25%;
+    }
+
+
+    main {
+        margin-top: 5%;
+        max-height: 77vh;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .genres .box {
+        margin-top: 10px;
+    }
+
+    .genres {
+        margin: 2%;
+        margin-bottom: 50px;
+        margin-top: 0px;
+        font-size: 9.5px;
+    }
+
+
+    .label {
+        margin-top: 40px;
+    }
+
+    [class="section2"] {
+       /* display: none;*/
+    }
+
+
+
+    /*-----------------Station-----------------*/
+
+
+    .station {
+        margin: 30px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        margin-left: 30px;
+        display: flex;
+        background-image: linear-gradient(to right, #272746, #581845);
+        opacity: 0.5;
+        border-radius: 8px;
+        height: 60px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .station:hover {
+        margin: 10px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        display: flex;
+        background-image: linear-gradient(to right, #272746, #581845);
+        opacity: 1;
+        border-radius: 8px;
+        transition: 0.5s ease-out;
+        height: 70px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .station .queue {
+        margin-top: -4px;
+    }
+
+    .station .queue:hover {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .station .fa-heart {
+
+        margin-left: 80px;
+    }
+
+    .station .fa-plus {
+
+        cursor: pointer;
+        padding: 0px;
+    }
+
+
+
+
+    /*--------------footer-----------------*/
+
+
+    footer {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        background-color: #696982;
+        z-index: 2;
+    }
+
+    .content {
+        font-size: 11px;
+        color: white;
+        margin-left: 0px;
+        align-self: center;
+        display: flex;
+    }
+
+    .content .box {
+        height: 30px;
+        width: 30px;
+        align-content: right;
+        margin: 0px;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+
+    .content #dispbox {
+        height: 0px;
+        width: 50px;
+        margin-left: -20px;
+        box-shadow: none;
+    }
+
+    .slidecontainer {
+        width: 30%;
+    }
+
+    .slider {
+        width: 100%;
+        background: #4CAF50;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-top: 13px;
+    }
+
+    .fa-forward {
+        margin-right: 5px;
+        margin-top: 0px;
+        cursor: pointer;
+    }
+
+    .fa-play {
+
+        margin-right: 5px;
+        margin-top: 15px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+
+    .fa-random {
+        margin-right: 5px;
+        margin-top: 17px;
+        cursor: pointer;
+    }
+
+    .fa-redo {
+        margin-right: 5px;
+        margin-top: 0px;
+        cursor: pointer;
+    }
+
+    .fa-share-alt {
+        margin-right: 5px;
+        margin-top: 0px;
+        cursor: pointer;
+    }
+
+    .fa-volume-up {
+        margin-right: 5px;
+        margin-top: 0px;
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+/*-----------------MEDIA QUERY-----------------*/
+/*-----------------MEDIA QUERY-----------------*/
+
+
+
+@media (min-width:800px) and (max-width: 1200px) and (orientation: landscape) {
+
+
+    /*-----------------section1_1-----------------*/
+
+    /*-----------------section1_1-----------------*/
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .box {
+        width: 27%;
+        height: 27%;
+        margin-bottom: 25%;
+    }
+
+    .logo{
+    margin: inherit;
+    object-fit: contain;
+    max-width: 48px;     
+    }
+
+    main {
+        margin-top: 5%;
+        max-height: 73vh;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .genres .box {
+        margin-top: 10px;
+    }
+
+    .genres {
+        margin: 2%;
+        margin-bottom: 50px;
+        margin-top: 0px;
+        font-size: 9.5px;
+    }
+
+
+    .label {
+        margin-top: 40px;
+    }
+
+    .section2 {
+        height: 0px;
+    }
+
+
+
+    /*-----------------Station-----------------*/
+
+
+    .station {
+        margin: 30px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        margin-left: 30px;
+        display: flex;
+        background-image: linear-gradient(to right, #272746, #581845);
+        opacity: 0.5;
+        border-radius: 8px;
+        height: 60px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .station:hover {
+        margin: 10px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        display: flex;
+        background-image: linear-gradient(to right, #272746, #581845);
+        opacity: 1;
+        border-radius: 8px;
+        transition: 0.5s ease-out;
+        height: 60px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .station .queue {
+        margin-top: -4px;
+    }
+
+    .station .queue:hover {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .station .fa-heart {
+
+        margin-left: 80px;
+    }
+
+    .station .fa-plus {
+
+        cursor: pointer;
+        padding: 0px;
+    }
+
+
+
+    /*--------------footer----------------*/
+
+
+    footer {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        background-color: #696982;
+        z-index: 2;
+    }
+
+    .content {
+        font-size: 11px;
+        color: white;
+        margin-left: 0px;
+        align-self: center;
+        display: flex;
+    }
+
+    .content .box {
+        height: 100px;
+        width: 100px;
+        align-content: center;
+        margin: 0px;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+    .content #dispbox {
+        height: 0px;
+        width: 100px;
+        margin-left: -40px;
+        box-shadow: none;
+        font-size: 14px;
+    }
+
+    .slidecontainer {
+        width: 40%;
+    }
+
+    .slider {
+        width: 100%;
+        background: #4CAF50;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-top: 13px;
+    }
+
+    .fa-forward {
+        margin-right: 8px;
+        margin-top: 0px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .fa-play {
+
+        margin-right: 10px;
+        margin-top: 15px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .fa-random {
+        margin-right: 15px;
+        margin-top: 17px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .fa-redo {
+        margin-right: 15px;
+        margin-top: 0px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .fa-share-alt {
+        margin-right: 15px;
+        margin-top: 0px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .fa-volume-up {
+        margin-right: 15px;
+        margin-top: 0px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+}
+
+}
+
+/*-----------------END-----------------*/
+
+
+/*-----------------END-----------------*/

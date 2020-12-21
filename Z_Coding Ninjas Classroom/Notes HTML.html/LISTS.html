@@ -1,0 +1,173 @@
+
+
+                               <LISTS>
+
+
+               ➢  Lists are used to group together related pieces of information so 
+                                they are clearly associated with each other and easy to read. 
+
+               ➢  Lists are good from a structural point of view as they help create a well-structured
+
+               ➢  more accessible, easy to maintain document. 
+
+               ➢  HTML supports  ordered, unordered  and definition lists.
+
+
+
+
+                     -: There two type of list in html:-
+
+
+
+                           ● Unordered Lists
+
+                               ➢ It is used to group a set of related items in no particular order. 
+
+                               ➢ Unordered lists are used when the numbering of items is not required. 
+                                     
+                               ➢  By default the items are followed by bullets. 
+
+                               ➢  They are defined using the <ul> tag. Eg:
+													
+													<!DOCTYPE html>
+													<html>
+													 <head>
+													<title>Unordered Lists</title>
+													</head>
+													<body>
+													<h1>Lists</h1>
+													<ul>
+													<li>first item</li>
+													<li>second item</li>
+													<li>third item</li>
+													</ul>
+													</body>
+													</html>
+
+
+											-: The output is as follows:
+
+											➢  HTML provides an interesting feature to change the style of the  list item marker. 
+
+
+
+							    ■ There are 4 types of style in unordered lists:
+
+
+											● type="disc" - sets the list item marker to a bullet (default)
+
+											○ type="circle" - sets the list item marker to a circle
+
+											■ type="square" - sets the list item marker to a square
+
+											   type="none" - the lists items will not be marked
+
+								      NOTE:
+
+  
+								          The above styles can be produced by using the 'type' attribute. 
+
+											However, this attribute is now not supported in HTML5 
+											and you now need to change the style using CSS.
+
+
+
+				        ● Ordered Lists
+
+
+					        ➢ It is used to group a set of related items in a specific order.
+
+					        ➢  Ordered lists are used when the numbering of items is required. 
+
+					        ➢ By default the items are followed by  numerical numbering. 
+
+					              They are defined using the <ul> tag.
+
+
+					               Eg:
+										<!DOCTYPE html>
+										<html>
+										<head>
+										<title>Unordered Lists</title>
+										</head>
+										<body>
+										<h1>Lists</h1>
+										<ol>
+										<li>first item</li>
+										<li>second item</li>
+										<li>third item</li>
+										</ol>
+										</body>
+										</html>
+
+
+					
+
+
+							      ➢ Similarly,like the unordered lists.
+
+									
+
+					    	-: There are also different types of ways to number
+
+
+									➢ the ordered lists using the 'type' attribute:
+
+
+									1. type="1" - The list items will be numbered with numbers (default)
+
+									A. type="A" - The list items will be numbered with uppercase letters
+
+									a. type="a" - The list items will be numbered with lowercase letters
+
+									I. type="I" - The list items will be numbered with uppercase roman numbers
+
+									i. type="i" - The list items will be numbered with lowercase roman numbers
+									Now, what if you want to change the starting numbering of the lists?
+
+									HTML has got the solution for it: the 'start' attribute. So, 
+
+									if we change <ol> to <ol start="7" >, you will now see the output as:
+
+                                              
+                                              if we write <ol> this mean order start from by Default "1";
+                                              	  but in case you to start as you want. <ol start="7" >
+
+                                              	  	order start form "7" in order;
+
+                   
+
+
+
+                       ●  Description Lists                        
+
+		                                     
+					             A definition list is not a list of items.
+
+					              This is a list of terms and explanation of the terms.
+
+					                 A definition list starts with the <dl> tag. Each definition - list term starts with the <dt> tag. 
+
+					                 	 Each definition - list definition starts with the <dd> tag.
+
+
+								Description lists are very specific in use as compared 
+								     to ordered and unordered lists and hence are very less used.
+
+								 But whenever, a structure like a list of terms and their description is required,the description lists are the the perfect elements.
+											 Eg:
+													<!DOCTYPE html>
+													<html>
+													<head>
+													<title>Description Lists</title>
+													</head>
+													<body>
+													<h2>Description List</h2>
+													<dl>
+													<dt>Coffee</dt>
+													<dd>- black hot drink</dd>
+													<dt>Milk</dt>
+													<dd>- white cold drink</dd>
+													</dl>
+													</body>
+													</html>

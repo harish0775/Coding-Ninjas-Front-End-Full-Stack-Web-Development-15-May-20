@@ -1,0 +1,44 @@
+.container{
+    height: 75vh;
+    width: 75vh;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.container div{
+     height:100px;
+    width: 100px;
+}
+
+.div1{
+    background-color: cyan;
+   /* height:40px;*/
+   /* width: 40px;*/
+   
+}
+
+
+.div2{
+    background-color: red;
+    height:40px;
+    width: 40px;
+}
+
+
+.div3{
+    background-color: grey;
+    height:40px;
+    width: 40px;
+ 
+}
+
+.div4{
+    background-color: maroon;
+    height:40px;
+    width: 40px;
+  
+}

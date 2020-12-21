@@ -1,0 +1,158 @@
+       <----COLOR----->
+
+     
+       The color property is used to set the foreground color of an element's text context and its
+       decoration. 
+
+             The color property can be specified in 6 different ways. 
+             Each one of them provides has some difference from the other. 
+
+             Although color can also be applied to backgrounds and borders, we will discuss them later. Eg. the following code:
+				
+				<h2 style="color:orangered;">orangered</h2>
+
+				<h2 style="color:#ff6347;">#ff6347</h2>
+
+				<h2 style="color:rgb(255, 99, 71);">rgb(255, 99, 71)</h2>
+
+				<h2 style="color:rgba(255, 99, 71, 0.7);">rgba(64, 213, 240, 0.5)</h2>
+			
+				<h2 style="color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h2>
+
+				<h2 style="color:hsla(9, 100%, 64%, 0.7);">hsla(190, 73%, 95%, 0.5)</h2>
+
+
+
+
+
+
+
+		 ----: By name :--
+
+				     All modern browsers support 140 different colors named in CSS.
+					       
+					       Unlike
+					         
+					         HTML
+					         CSS
+
+					will completely ignore unknown keywords. 
+
+					The color keywords all represent plain, solid colors, without transparency.
+					   
+					     Eg. 
+
+					     orangered, green, blue, lightgrey, etc.
+
+		----: rgb :----
+					
+					 RGB stands for Red, Green and Blue.
+
+					 It is a color model where combination of red, green and blue form a color.
+
+					 The intensity of each color has value ranging from 0 to 255.
+
+					 This provides very large number of colors dataset.
+
+					  Eg. 
+					         RGB value for :--
+
+					             black rgb(0, 0, 0) 
+
+					             white  rgb(255, 255,	255).
+
+
+	    ---: hex code :---
+
+
+					The colors can be represented by 6 digits hexadecimal code. 
+
+					The codes are made	using the 3 colors(Red, Green and Blue). 
+
+					First 2 digits  :--
+					     First 2   red 
+					     next 2    green           #RRGGBB.
+					     last 2    blue.
+
+					  So, the syntax for hex code is: #RRGGBB. 
+
+					For each hexadecimal value between 00 - FF is similar to 0 - 255.
+
+
+					      Eg. 
+
+					        #000000 is black 
+					        #FFFFFF is white.
+
+
+
+	    ----: hsl :---                  
+
+	                                  Hue, Saturation and Lightness
+
+
+					The color can also be specified using the HSL (Hue, Saturation and Lightness)
+					components. 
+
+
+					  ● Hue, is a degree on the 
+
+					            color wheel from 0 to 360. 
+
+					                0 is red, 
+					               120 is green,  
+                                   240 is blue. 
+
+
+                      ● Saturation, represents the amount of saturation in the color.
+
+                       It is a	percentage value,
+
+                           0% means a shade of gray
+
+                           100% is the full color.
+
+                       ● Lightness, represents the amount of light in the color.
+
+                        It is also a percentage,
+
+                            0% is black, 
+
+                            50% is neither light or dark, 
+
+                            100% is white. 
+
+
+        ---: rgba :--  
+
+                                        Red, Green, Blue, Alpha
+
+					   RGBA (Red, Green, Blue, Alpha) is an extension of RGB,
+
+					   RGB provided with alpha transparency. 
+
+					   This alpha value determines the opacity of the RGB defined color.
+
+					   The alpha parameter is a number between 0.0 (transparent) and 1.0 (opaque).  
+
+					      Eg.
+
+					      rgba(255, 0, 0, 0.6) is a red color, with 0.6 opacity will have the color:
+	 
+
+
+
+	   ---:  hsla :-- 	                
+	                                Hue, Saturation, Lightness, Alpha
+
+
+					HSLA (Hue, Saturation, Lightness, Alpha) is also an extension of HSL.
+
+					HSlA  provided with  alpha transparency. 
+
+					The alpha value and property is same as that in RGBA. 
+
+					    Eg.
+
+
+			hsla(0, 100%, 50%, 0.6) is also a red color with 0.6 opacity and have same color:

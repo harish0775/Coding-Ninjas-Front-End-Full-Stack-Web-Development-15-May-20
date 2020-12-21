@@ -1,0 +1,220 @@
+
+
+                  
+                  <----------Table---------------->
+
+
+              ● Tables are used to show the tabular data. To achieve this many tags are used. 
+
+              ● All the table- data is enclosed within the <table> tags. 
+
+              ● A table is divided into rows (with the <tr> tag).
+
+              ● Each row is divided into data cells (with the <td> tag).
+
+		      ●  tr stands for table row, which represents the row of a table.
+
+		      ● td stands for table-data, which is the content of a data cell. 
+
+		      ● A data cell can contain :-
+
+		               text,
+
+		               images,
+
+		               lists, 
+
+		               paragraphs,
+
+		               forms,
+
+		               horizontal rules, 
+
+		               tables, etc.
+
+		            create Table 
+		                          Eg:
+										<table border=1>
+										<tr>
+										<td>Row 1, cell 1</td>
+										<td>Row 1, cell 2</td>
+										<td>Row 1, cell 3</td>
+										</tr>
+										<tr>
+										<td>Row 2, cell 1</td>
+										<td>Row 2, cell 2</td>
+										<td>Row 2, cell 3</td>
+										</tr>
+										<tr>
+										<td>Row 3, cell 1</td>
+										<td>Row 3, cell 2</td>
+										<td>Row 3, cell 3</td>
+										</tr>
+										<tr>
+										<td>Row 4, cell 1</td>
+										<td>Row 4, cell 2</td>
+										<td>Row 4, cell 3</td>
+										</tr>
+										</table>
+ 
+
+               
+             --:border Attribute :--
+
+
+                 ● The border attribute is used for mentioning the thickness of the borders. 
+
+                 ● If you do not specify a border attribute the table will be displayed without any borders. 
+
+                 ● Sometimes this can be useful, but most of the time, you want the borders to show
+             
+
+            --:Headings in a Table:--
+
+
+                 If you want to add column names, then HTML provides a separate tag for that. 
+                 Headings in a table are defined with the <th> tag.
+                       
+
+                        <th> table heading.
+
+                    Eg:
+							<table border=1>
+							<tr>
+							<th>Column 1</th>
+							<th>Column 2</th>
+							<th>Column 3</th>
+							</tr>
+							<tr>
+							<td>Row 1, cell 1</td>
+							<td>Row 1, cell 2</td>
+							<td>Row 1, cell 3</td>
+							</tr>
+							<tr>
+							<td>Row 2, cell 1</td>
+							<td>Row 2, cell 2</td>
+							<td>Row 2, cell 3</td>
+							</tr>
+							</table>
+
+
+
+   -----:<thead>, <tbody>, <tfoot>:----
+
+
+
+   	                 ● The <thead> tag is used to group header content in an HTML table.
+
+   	                 ● The <tbody> tag is used to group the body content in an HTML table.
+
+   	                 ● The <tfoot> tag is used to group footer content in an HTML table.
+
+   	                 ● These are the semantic tags that not only provide meaning to the elements but also
+                       have some other useful functionality as well.
+						
+				     ● Browsers can use these elements to enable scrolling of the table body
+						independently of the header and footer. Also, 
+
+					 ●  when printing a large table that spans multiple pages, these elements can enable    
+					     the table header and footer to be printed at the top and bottom of each page.
+						
+
+						 Eg:
+									<table border="1">
+										<thead>
+											<tr>
+												<th>Column 1</th>
+												<th>Column 2</th>
+												<th>Column 3 </th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Row 1, cell 1</td>
+												<td>Row 1, cell 2</td>
+												<td>Row 1, cell 3</td>
+											</tr>
+											<tr>
+												<td>Row 2, cell 1</td>
+												<td>Row 2, cell 2</td>
+												<td>Row 2, cell 3</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Column 1</th>
+												<th>Column 2</th>
+												<th>Column 3 </th>
+											</tr>
+										</tfoot>
+									</table>
+								
+
+
+
+
+		---: caption Tag :---
+
+
+
+		          ● The <caption> tag defines a table caption.
+
+		          ● The <caption> tag must be inserted immediately after the <table> tag.
+
+		           Eg:
+
+		            If you add 
+
+
+		                    <caption>Table Example</caption> 
+		                        just after the  
+		                               <table> tag.
+
+
+
+
+               NOTE: 
+
+                     You can specify only one caption per table
+
+
+     ----:. colspan and rowspan Attribute:--
+
+			   To manage the layout of the the tables,
+
+			         ● Two attributes are used, rowspan and colspan. 
+
+			         ● Attribute rowspan is used to mention the number of rows that a particular cell will
+						be occupying.
+					 ● Attribute colspan is used to mention the number of columns that a
+						particular cell will be occupying.
+
+					● They both are used with the td tag and can also be used with the th tag.
+
+
+					     Eg: 
+
+					          adding attributes colspan and rowspan to the table
+						<table border="1">
+							<thead>
+								<tr>
+									<th>Column 1</th>
+									<th colspan="2">Column 2 and 3 heading</th>
+								</tr>
+							</thead>
+						<tbody>
+							<tr>
+								<td>Row 1, cell 1</td>
+								<td colspan="2">(Row 1, cell 2) and (Row 1, cell 3)</td>
+							</tr>
+							<tr>
+								<td rowspan="2">(Row 2, cell 1) and (Row 3, cell 2)</td>
+								<td>Row 2, cell 2</td>
+								<td>Row 2, cell 3</td>
+							</tr>
+							<tr>
+								<td>Row 3, cell 2</td>
+								<td>Row 3, cell 3</td>
+							</tr>
+						</tbody>
+					   </table>

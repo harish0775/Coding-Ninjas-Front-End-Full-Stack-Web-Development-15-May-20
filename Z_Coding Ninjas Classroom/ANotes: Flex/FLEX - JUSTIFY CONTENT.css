@@ -1,0 +1,107 @@
+ 
+
+  <------------------------FLEX - JUSTIFY CONTENT-------------------------->
+
+
+
+
+
+	The justify-content property is used to align the flex items along the main axis. 
+
+
+This defines  the alignment along the main axis.
+
+	 This property distributes extra free space inside the
+	layout between the elements. 
+
+	The justify-content property takes on any of the values below:
+	
+	● flex-start - default
+	● flex-end
+	● center
+	● space-between
+	● space-around
+	● space-evenly
+	
+	Eg., for the layout like this:
+	
+			<div class="flex-container">
+			<div id="div1">div1</div>
+			<div id="div2">div2</div>
+			<div id="div3">div3</div>
+			</div>
+	
+	we apply this css to it: 
+
+	.flex-container { display:flex; width:350px; background-color:lightgrey; }
+	.flex-container div { width:70px; height:70px; }
+	#div1 { background-color:#7ff9ae; }
+	#div2 { background-color:#76bbfc; }
+	#div3 { background-color:#ff7f8e; }
+
+
+  ----------:flex-start:---------
+
+	The flex-start value aligns the items towards the start of the main axis.
+
+	 This is the default value. 
+
+	 Else 
+	    use justify-content: flex-start;     in the flex-container class
+
+
+   -------:flex-end:--------
+
+The flex-end value aligns the items towards the end of the main axis. 
+
+Use justifycontent: flex-end; in the flex-container class and the flex items
+
+
+--------:center:-----
+The center value aligns the items towards the center of the main axis. Use
+justify-content: center; in the flex-container class and the flex it.
+
+
+
+---------:space-between:-----------
+
+The space-between value distributes the remaining space between the items
+evenly along the main axis. No space is provided towards the start of the first
+container and end of last container. 
+  
+     So, there is same spacing between the items.  
+
+     Use justify-content: space-between; in the flex-container class and the flex
+
+--------:space-around:--------------
+
+
+The space-around value distributes the remaining space around the items evenly
+along the main axis.
+
+ Visually the spaces does not seem to be equal.
+
+  This is because all the flex items have equal space on both sides.
+
+   Eg., suppose each item gets a spacing of 10px on both sides of each other.
+
+    So, first item will have 10px on the left side. 
+
+    The first item will have 10px on the right side and second item will have 10px on it's left side. This will total to 20px spacing
+between them.
+
+ SImilarly, the last item have only 10px spacing on it's right side.
+
+  Use justify-content: space-around; in the flex-container class and the flex
+
+
+
+----------: space-evenly :--------------
+
+The space-evenly value distributes the remaining space between the items and edges of the 
+
+      container evenly along the main axis. 
+
+This provides a visual look of evenly spread items inside the container.
+
+   Use justify-content: space-evenly; in the flex-container class and the fle

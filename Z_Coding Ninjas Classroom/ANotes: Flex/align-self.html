@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>align-self</title>
+	<style type="text/css">
+		
+		.flex-container { display:flex; width:250px; height:150px; backgroundcolor:lightgrey; }
+.flex-container div { width:70px; min-height:40px; }
+#div1 { background-color:#7ff9ae; align-self: flex-start; }
+#div2 { background-color:#76bbfc;align-self: center; } 
+#div3 { background-color:#ff7f8e; /*align-self: stretch;
+	align-self: center;
+	align-self: flex-start;*/
+	align-self: baseline; }
+
+	/*use one at a time*/
+
+}
+	
+
+	</style>
+
+
+
+</head>
+
+
+
+<body>
+<div class="flex-container">
+<div id="div1">div1</div>
+<div id="div2">div2</div>
+<div id="div3"><h5>h1</h5></div>
+</div>
+</body>
+</html>

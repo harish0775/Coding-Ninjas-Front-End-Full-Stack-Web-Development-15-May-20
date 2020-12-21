@@ -1,0 +1,169 @@
+musicproject.cssbody {
+	margin: 0px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: white;
+}
+
+.top_nav_bar > div {
+	display: inline-block;
+}
+
+.top_nav_bar {
+	/*border: 2px solid  pink;*/
+
+	height: auto;
+	width: 100%;
+	background-color: rgb(92, 165, 214);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 3%;
+	padding-right: 3%;
+	
+
+
+	border: 2px solid orange;
+}
+
+
+.logo_with_text {
+border: 2px solid blue;
+}
+
+
+
+.logo_with_text > div{ 
+	vertical-align: middle;
+	display: inline-block;
+
+
+}
+.website_logo
+{
+
+	border: 2px solid red;
+
+}
+.website_logo a img{
+
+
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	/*animation-name: rotating;*/
+	
+}
+.website_name  h4{
+   margin: 1px;
+}
+.website_name  h6{
+   margin: 7px;
+}
+
+}
+.favs{
+
+	animation-name: flexible;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	perspective: 10000px;
+	transform-style: preserve-3d;
+	animation-iteration-count: infinite;
+
+}
+
+.search_bar{
+	width: 20%;
+	position: relative;
+   margin-left: 45%;
+  
+}
+.search_bar input{
+	  width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 18px;
+    border: none;
+    padding: 5px;
+    font-weight: 500;
+     text-align: start;
+    transition: all ease-in-out 0.1s;
+    overflow: none;
+    word-spacing: normal;
+ 
+    text-shadow: none;
+ 
+    cursor: text;
+    
+   
+    border-width: 2px;
+   
+    border: 2px solid red;
+}
+.magnifying_glass{
+	color: red;
+
+}
+
+.search_bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.search_bar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+input:focus {
+	outline: none;
+}
+
+
+@keyframes ringing_bell {
+	0% {
+		transform: rotate(-15deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+
+.bell_icon img{
+	width: 30px;
+	height: 30px;
+    
+	animation-name: ringing_bell;
+	animation-duration: 0.2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 5;
+
+}
+
+.bell_icon{
+
+/*margin-right: -10;*/
+  border: 2px solid red;
+}
+
+.User_profile img{
+
+	border: 2px solid green;
+   width: 45px;
+    height: 45px;
+    border-radius: 100%;
+
+}

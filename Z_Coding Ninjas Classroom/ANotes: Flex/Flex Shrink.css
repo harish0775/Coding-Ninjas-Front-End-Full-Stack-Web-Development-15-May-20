@@ -1,0 +1,50 @@
+
+
+
+
+       <-----------------:FLEX SHRINK:---------->
+
+
+	       The flex-grow property specifies the ratio with which a flex item shrinks relative to the
+	         other flex items,
+
+	       when there is some extra space available. 
+
+	       This is just opposite to flex-grow.
+
+	           Here, also the range of value if from 0(zero) to any positive number. 
+
+	           Zero means width	would not change.
+
+	            Eg., for a simple layout:
+	
+						<div class="flex-container">
+						<div id="div1">div1</div>
+						<div id="div2">div2</div>
+						<div id="div3">div3</div>
+						</div>
+	the css applied is: 
+
+
+	.flex-container { 
+
+		display:flex;
+		 width:360px; 
+		 height:100px; 
+		 backgroundcolor:lightgrey; 
+
+	}
+	.flex-container div { 
+
+		width:70px; 
+		margin:10px;
+	 }
+	 
+	#div1 { background-color:#7ff9ae; flex-shrink:0; }
+	#div2 { background-color:#76bbfc; flex-shrink:2; }
+	#div3 { background-color:#ff7f8e; flex-shrink:4; }
+	this will look like this:
+	Now, if the width of the flex-container is decreased by 90px to width:270px;, then the layout
+	will now look like this:
+	Here, only the div2 and div3 shrinks, when the width of the container is decreased. Also, div3
+	decreases twice as much as div2. Now, width of div1 is 100px, div2 is 70px and div3 is 40px.

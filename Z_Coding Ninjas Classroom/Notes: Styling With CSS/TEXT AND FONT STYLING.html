@@ -1,0 +1,422 @@
+
+
+
+
+                   <-----TEXT AND FONT STYLING------>
+
+
+
+           Various properties are provided to change the look and style of text in the HTML document. 
+
+          These styles will apply only to content of any element that is text.
+
+           We will look into some of the mostly used text and font styling properties. 
+
+           Font properties define the look of the font:
+
+               like
+
+                    font family
+
+                     boldness
+
+                      size 
+
+                      style.
+
+
+
+    The first 4 are font properties. 
+
+
+         Text properties define the layout and presentation of the text in the HTML page
+
+
+
+
+
+     <---- font-size--->
+
+
+            This defines the size of the text. 
+
+            The font-size value can be an absolute, or relative size.
+
+
+            i.e.
+
+            values can be applied in
+
+                     px, %, em, etc. 
+
+             
+
+              Eg.
+
+                   h1 { 
+
+                   font-size: 30px; 
+
+                  } 
+
+
+                  h2 { 
+
+                  font-size: 1.875em; 
+
+                  }
+
+
+
+
+
+
+ <---font-family---->
+      
+
+      The font family of a text is set with the font-family property. 
+
+      The font-family property should hold several font names as a "fallback" system. 
+
+      If the browser does not support the first font, it tries the next font, and so on.
+
+      Start with the font you want, and end with a generic family, to let the browser pick
+	a similar font in the generic family, if no other fonts are available.
+
+
+	 Eg.
+
+	     h1 {
+
+	        font-family: sans-serif, monospace, serif;
+
+	        }
+	
+	
+	NOTE: 
+
+			If the name of a font family is more than one word, it must be in quotation
+			marks, like: "Times New Roman".
+
+
+  
+
+
+
+<----font-weight--->
+
+          The font-weight property specifies the weight/thickness of a font. 
+
+          The weight ranges from light to bold.
+
+          
+           Values can be 
+
+                                  bold
+
+                                  bolder
+
+                                  inherit
+
+                                   initial
+
+                                   lighter
+
+                                   normal
+
+                                   unset.
+
+
+              Alternatively,
+
+                    we can use numeric values ranging from 100-900 to define the
+                       weight of the font. 
+
+
+
+                       Eg.
+
+                           h1 { 
+                                font-weight: lighter; 
+
+                              }
+
+
+
+
+<--font-style--->
+           
+
+                The font-style property specifies the style for a text. 
+
+
+          The values for this property are: 
+
+
+                         normal 
+
+                         italic 
+
+                          oblique
+
+                           initial,
+
+                           inherit.
+
+
+
+
+
+
+
+<---color--->
+
+               We have already discussed applying color to text using the color property.
+
+                The color can be defined either by name, hex code, rgb, rgba, hsl, or hsla.
+
+
+
+
+
+<---text-align--->
+         
+
+
+              The text-align property is used to set the horizontal alignment of a text.
+
+               
+
+           A text  aligned :-
+
+                             left
+
+                             right
+
+                             centered 
+
+                              justified.
+
+
+                 
+
+              Eg.
+
+                         p#center {
+
+                                   text-align: center; 
+                                  }
+                    
+
+                         p#left { 
+
+                                text-align: left;
+
+
+                                 }
+                
+                         p#right { 
+
+                                text-align: right; 
+
+                                }
+
+
+
+
+
+<----text-indent----->    indentation: mean  1 cm ka gap jhodh  dy naa. 
+
+          The text-indent property specifies the indentation of the first line in a text-block.
+
+          Negative values are allowed.
+
+          The first line will be indented to the left if the value is negative. 
+
+
+      Eg.
+
+
+           <p style="text-indent: 100px;">
+
+           	  Don’t you just love exploring beautiful
+and neat sites with a clean user interface? While most of us would reply
+with an assertive ‘YES,’ little, do we know.</p>
+
+
+
+
+
+
+
+
+<-----text-transform---->
+    
+     The text-transform property is used to specify the case of the letters in a text.
+        
+        It can be used to turn text to:
+					
+
+					● uppercase - turns every character to uppercase
+
+					● lowercase - turns every character to lowercase
+
+					● capitalize - turns first letter of each word to uppercase and other to lowercase
+
+
+					● none - text renders as it is. It is the default
+					
+
+
+
+
+
+<----text-decoration--->
+
+
+           The text-decoration property is used to set or remove decorations from text. 
+
+           The value text-decoration: none; is often used to remove underlines from links. 
+
+           The text-decoration is used to decorate text.
+
+            It has 4 values:
+			
+				● underline - puts a line under the text
+				● overline - puts a line above the text
+				● line-through - puts a line through the text
+				● none - removes any of the above decorations
+		
+			Eg.
+
+			     h3#underline { 
+
+			              text-decoration: underline;
+
+			                 }
+			h3#line-through {
+
+			        text-decoration: line-through; 
+			          }
+
+			h3#overline { 
+
+			      text-decoration: overline; 
+
+			       }
+
+
+
+
+
+<-----line-height----->
+
+
+
+          The line-height property sets the height of the lines in an element.
+
+           It does not change the size of the font. 
+
+           The font-size value can be an absolute, or relative size.
+
+                i.e.
+
+                    values can be applied in
+                      
+                                   px, %, em, etc. 
+
+				If no unit specified then it is multiplied by element’s font-size. 
+
+
+				  Eg.
+
+				      h3 {
+
+				       line-height:1.5; 
+
+				   }
+                    
+
+
+
+
+
+<----letter-spacing----->
+
+            The letter-spacing property is used to specify the space between the characters in a text.
+
+           This is used to increase or decrease the space between the characters only.
+
+           The value of letter-spacing can be absolute or relative. 
+
+       
+
+        Eg.
+             h3 { 
+
+             letter-spacing: 0.5em; 
+
+              }
+
+   
+
+<----word-spacing---->
+         
+
+          The word-spacing property is used to specify the space between the words in a text. 
+
+          This is used to increase or decrease the space between the words.
+
+          The value of word-spacing can be absolute or relative. 
+
+       Eg.
+
+
+          h3 {
+
+            word-spacing: 10px; 
+
+
+            }
+
+
+
+<----text-shadow--->
+      
+
+       The text-shadow property adds shadow to text. 
+
+       The value:
+
+          contains 3 values
+
+            position -->
+                         horizontal shadow
+                         
+                         vertical shadow 
+
+                         color of the shadow. 
+
+            Eg.
+
+
+                  h2 { 
+
+                       text-shadow: 2px 1px red; 
+
+
+                     }
+
+            
+
+
+
+
+<-----BACKGROUND------>
+  
+
+
+
+           
+
+

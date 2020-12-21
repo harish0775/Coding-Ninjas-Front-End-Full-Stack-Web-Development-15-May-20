@@ -1,0 +1,75 @@
+
+
+
+    <--------------- FLEX - ALIGN SELF ---------------->
+
+
+
+     The align-self property is used for the alignment of selected flex items inside the flex
+        container.
+
+		This overrides the default alignment set by the flex container. 
+
+		    Align-self can be set to any of these values:
+
+		● auto - default
+		● flex-start
+		● flex-end
+		● center
+		● stretch
+		● baseline
+
+	Eg., for this simple layout:
+
+		<div class="flex-container">
+		<div id="div1">div1</div>
+		<div id="div2">div2</div>
+		<div id="div3">div3</div>
+		</div>
+
+		we apply this to it: 
+
+		.flex-container { display:flex; width:250px; height:150px; backgroundcolor:lightgrey; }
+		.flex-container div { width:70px; min-height:70px; }
+		#div1 { background-color:#7ff9ae; }
+		#div2 { background-color:#76bbfc; }
+		#div3 { background-color:#ff7f8e; }
+
+
+
+
+
+----------:	auto :---------------
+
+	The auto value inherits the flex container align-items property, or by default stretch
+	is applied if align-items property is not set. This is the default value. Else use alignself: auto; in the flex-container class. 10.2. flex-start
+	
+
+	The flex-start value aligns the selected flex items towards the start of the cross axis. Use align-self: flex-start; with the selected flex items and it will look like this:
+	Here, the property is applied to div2. 10.3. flex-end
+	The flex-end value aligns the selected flex items towards the end of the cross axis. Use align-self: flex-end; with the selected flex items and it will look like this:
+	Here, the property is applied to div2. 10.4. center
+	The center value aligns the selected flex items towards the center of the cross axis. Use align-self: center; with the selected flex items and it will look like this:
+	Here, the property is applied to div2. 10.5. stretch
+	The stretch value stretches the selected flex items to fill the container along the
+	cross axis. Use align-self: stretch; with the selected flex items and it will look
+	like this:
+	For this example, auto is also set to stretch by default. That's why both auto and
+	stretch value are same. 10.6. baseline
+	The baseline value aligns the flex items such as the baselines of the content inside
+	the items. This means that the bottom base of the content inside the flex item will
+	be the axis to align the items. To see this property work, we need to make some variation in the above code. The
+	changes are highlighted:
+	<div class="flex-container">
+	<div id="div1"><h5>h1</h5></div>
+	<div id="div2"><h2>h2</h2></div>
+	<div id="div3"><h1>h3</h1></div>
+	</div>
+	we can use like this: .flex-container { display:flex; width:300px; height:150px; backgroundcolor:lightgrey; }
+	.flex-container div { width:70px; min-height:70px; }
+	#div1 { background-color:#7ff9ae; align-self: baseline; }
+	#div2 { background-color:#76bbfc; }
+	#div3 { background-color:#ff7f8e; align-self: baseline; }
+	the layout will look like this:
+	Here, h2 is not given the baseline property. Therefore, it is not aligned and is
+	stretched by default.

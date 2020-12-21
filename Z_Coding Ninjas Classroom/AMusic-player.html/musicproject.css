@@ -1,0 +1,506 @@
+body {
+	margin: 0px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: grey;
+}
+ 
+.top_nav_bar > div {
+	display: inline-block;
+}
+
+.top_nav_bar {
+	/*border: 2px solid  pink;*/
+
+	height: auto;
+	width: 100%;
+	background-color: rgb(92, 165, 214);
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 3%;
+	padding-right: 3%;
+	
+
+	border: 2px solid orange;
+}
+
+
+.logo_with_text {
+border: 2px solid blue;
+}
+
+
+
+.logo_with_text > div{ 
+	vertical-align: middle;
+	display: inline-block;
+
+
+}
+.website_logo
+{
+
+	border: 2px solid red;
+
+}
+.website_logo a img{
+
+
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	/*animation-name: rotating;*/
+	
+}
+.website_name  h4{
+   margin: 1px;
+}
+.website_name  h6{
+   margin: 7px;
+}
+
+}
+.favs{
+
+	animation-name: flexible;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	perspective: 10000px;
+	transform-style: preserve-3d;
+	animation-iteration-count: infinite;
+
+}
+.search_bar{
+	width: 20%;
+	position: relative;
+   margin-left: 45%;
+  
+}
+.search_bar input{
+	  width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 18px;
+    border: none;
+    padding: 5px;
+    font-weight: 500;
+     text-align: start;
+    transition: all ease-in-out 0.1s;
+    overflow: none;
+    word-spacing: normal;
+ 
+    text-shadow: none;
+ 
+    cursor: text;
+    
+   
+    border-width: 2px;
+   
+    border: 2px solid red;
+}
+.magnifying_glass{
+	color: red;
+
+}
+
+.search_bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.search_bar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+input:focus {
+	outline: none;
+}
+
+
+@keyframes ringing_bell {
+	0% {
+		transform: rotate(-15deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+
+.bell_icon img{
+	width: 30px;
+	height: 30px;
+    
+	animation-name: ringing_bell;
+	animation-duration: 0.2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 5;
+
+}
+
+.bell_icon{
+
+/*margin-right: -10;*/
+  border: 2px solid red;
+}
+
+.User_profile img{
+
+	border: 2px solid green;
+   width: 45px;
+    height: 45px;
+    border-radius: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.aside {
+	display: inline-block;
+	overflow: hidden;
+}
+/*.section-1 {
+		width: 100%;
+		border: 2px solid black;
+	}
+*/
+.section-1 {
+	border: 2px solid black;
+
+	width: 70%;
+	height: 86vh;
+	overflow: scroll;
+	overflow-x: hidden;
+
+}
+/* overflow should be scrollable but the scroll bar should be hidden*/
+.section-1::-webkit-scrollbar {
+	display: none;
+}
+/*.outer-carousel img{
+height: 9%;
+width: 9%;
+}
+.carousel img {
+		height: 23vw;
+		width: 34.5vw;
+	}
+.carousel img:nth-child(1) {
+		left: 56vw;
+	}
+.carousel img:nth-child(3) {
+		right: 56vw;
+	}*/
+.outer-carousel {
+	position: relative;
+	/*left: 9vw;*/
+	margin-top: 5%;
+	/*transition: all ease-in-out 1s;*/
+}
+/* carousel */
+.carousel {
+	position: absolute;
+	/*left: 2%;*/
+	width: 68%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	overflow: visible;
+	justify-content: space-between;
+}
+/* general properties for images in the carousel */
+.carousel{
+	border: 2px solid red;
+	width: auto;
+	
+}
+.carousel img{
+	height: 15vw;
+	width: 22.5vw;
+	border-radius: 5px;
+	transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+		/*border: 2px solid green;*/
+
+}	
+/* first image in the carousel */
+/* if you see it direction wise, then it is the third image in the carousel */
+.carousel img:nth-child(1) {
+	border: 2px solid yellow;
+	position: relative;
+	left: 40vw;
+	z-index: 2;
+}
+/* image which is in the maddle of the carousel */
+.carousel img:nth-child(2) {
+	border: 2px solid green;
+	z-index: 3;
+	
+
+}
+/* third image in the carousel */
+/* if you see it direction wise, then it is the first image in the carousel */
+.carousel img:nth-child(3) {
+	border: 2px solid orange;
+	position: relative;
+	right: 40vw;
+	z-index: 1;
+
+}
+
+/* animations for carousel */
+
+.carousel img:hover {
+	border: 2px solid cyan;
+	z-index: 4;
+	box-shadow: 0px 0px 12px 0.1px gray;
+	height: 18vw;
+	width: 27vw;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++carousel animation  end++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.latest-release {
+	position: relative;
+	top: 20vw;
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+    border: 2px solid red;
+
+}
+/* container of the latest release part should be of type flex */
+.latest-release-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+/* all the components of the latest release part */
+.latest-release-content > div {
+	  border:1px solid green; 
+	height: 100px;
+	width: 47%;
+	margin: 5px 0px;
+}
+.card {
+	display: flex;
+	flex-direction: row;
+	transition: box-shadow ease-in-out 0.1s;
+
+}
+/* hovering effects for the latest release part components */
+.card:hover {
+	box-shadow: 0px 0px 2px 1px white;
+}
+/* images in the cards of the latest release section */
+.card img {
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+	border: 2px solid red;
+
+}
+.play-button{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: -104%;
+	color: rgba(255, 255, 255, 0);
+	/* note that its opacity will be 0 normally */
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 40px;
+	padding-top: 2%;
+	text-align: center;
+	z-index: 5;
+	transition: all ease-in-out 0.2s;
+	border: 2px solid red;
+}
+.play-button i {
+	padding-top: 28%;
+
+}
+/* hovering effect for the play button */
+.play-button:hover {
+	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 2px solid cyan;
+}
+
+.song-description {
+	margin: auto 9%;
+	border: 2px solid red;
+}
+.options {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap-reverse;
+	text-align: right;
+	margin-left: auto;
+	margin-right: 2%;
+	margin-top: 2%;
+	border: 2px solid red;
+}
+/* this input is for the latest release drop down */
+input[type="checkbox"] {
+	display: none;
+
+	border: 2px solid red;
+}
+/* checking it, will trigger the latest release dropdown */
+input[type="checkbox"]:checked ~ .latest-release-dropdown {
+	width: max-content;
+	height: auto;
+	opacity: 1;
+	padding: 5px;
+
+	border: 2px solid red;
+}
+.latest-release-dropdown {
+	position: absolute;
+	background-color: darkslateblue;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+	top: 20px;
+	right: 0px;
+	overflow: hidden;
+	z-index: 2;
+	border: 1px solid black;
+	box-shadow: 0px 0px 2px 1px black;
+	transition: all ease-in-out 0.3s;
+
+	border: 2px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popular-artists {
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 26vw;
+	box-sizing: border-box;
+}
+/* container of the popular artists */
+.popular-artist-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/* images in the popular artists section */
+.popular-artists div a img {
+	width: 10vw;
+	min-width: 60px;
+	min-height: 60px;
+	height: 10vw;
+	border-radius: 50%;
+}
+/* content of the container in popular artists section */
+.popular-artists > div {
+	/* position: relative; */
+	margin: 5px;
+	text-align: center;
+}
+.popular-artists div p {
+	text-align: center;
+}
+.popular-artists {
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 26vw;
+	box-sizing: border-box;
+}
+.popular-artist-content a div div i {
+	margin: auto;
+	font-size: 3vw;
+	opacity: 0;
+	transition: opacity ease-in-out 0.2s;
+} /* added hovering effects */
+.popular-artist-content a div div:hover {
+	opacity: 0.5;
+}
+.popular-artist-content a div div:hover i {
+	opacity: 1;
+}
+.popular-artist-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.popular-artist-content > a > div {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.popular-artist-content > a > div > div {
+	position: absolute;
+	display: flex;
+	/* top: 0px;
+    left: 0px; */
+	top: 0px;
+	width: 10vw;
+	min-width: 60px;
+	min-height: 60px;
+	height: 10vw;
+	border-radius: 50%;
+	/*background-color: rgb(0, 0, 0);*/
+	background-color: grey;
+	opacity: 0;
+	transition: opacity ease-in-out 0.1s;
+}
+.music-themes-2 .outer-div:nth-child(1) .inner-div {
+	background-image: url("media/music\ themes\ 2/party.jpg");
+}
+/* electronic */
+.music-themes-2 .outer-div:nth-child(2) .inner-div {
+	background-image: url("media/music\ themes\ 2/electronic.jpg");
+}
+/* road */
+.music-themes-2 .outer-div:nth-child(3) .inner-div {
+	background-image: url("media/music\ themes\ 2/road.jpg");
+}

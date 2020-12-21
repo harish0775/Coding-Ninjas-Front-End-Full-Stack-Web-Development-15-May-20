@@ -1,0 +1,83 @@
+
+
+
+      <-------------FLEX WRAP--------------->
+
+      The flex-wrap property specifies whether the flex items should wrap or not. 
+              By default, flex items try to fit into one line. 
+
+      This property allows you to change that and allow the items to flow into multiple lines as needed with this property. 
+
+      ● nowrap - default
+
+	  ● wrap
+
+	  ● wrap-reverse
+
+
+	  <div class="flex-container">
+		<div class="div1">div1</div>
+		<div class="div2">div2</div>
+		<div class="div3">div3</div>
+		<div class="div1">div4</div>
+		<div class="div2">div5</div>
+		<div class="div3">div6</div>
+	</div>
+
+		and with the following styles applied to them: 
+
+		.flex-container {
+		    display:flex; 
+		    width:250px; 
+		    height:200px; 
+		    backgroundcolor:lightgrey; 
+		}
+
+		.flex-container div {
+		    width:70px;
+		    height:70px;
+
+		   }
+		#div1 { background-color:#7ff9ae; }
+		#div2 { background-color:#76bbfc; }
+		#div3 { background-color:#ff7f8e; }
+the layout(original container width is 250px and original total div's width is 420px) 
+
+
+
+  ---------: nowrap :-------
+
+		The nowrap value specifies that the flex items will not wrap,
+		 i.e. it will make all the	flex-items appear in a single line, 
+		 no matter how many items are present inside the flex-container.
+		  It is a default value but you can use flex-wrap: nowrap; as well in
+		the flex-container class.
+
+
+   -------:wrap:--------
+
+	The wrap value specifies that the flex items will wrap if necessary,
+
+	 i.e. if the total flex items is width is larger than the width of the container, 
+	 the items will arrange	themselves in the next column.
+
+	  The vertical spacing of the items will be automatically decided by this property.
+
+	   Use flex-wrap: wrap; in the flex-container class to wrap.
+	
+
+
+-----:wrap-reverse:------flex-wrap: wrap-reverse; 
+
+
+	The wrap-reverse value specifies that the flex items will wrap in reverse order if necessary, 
+
+	i.e. if the total flex items is width is larger than the width of the container,
+
+	the items will arrange themselves in the next column but the items will start from
+
+
+
+	the bottom of the container. Use flex-wrap: wrap-reverse; in the flex-container
+
+	

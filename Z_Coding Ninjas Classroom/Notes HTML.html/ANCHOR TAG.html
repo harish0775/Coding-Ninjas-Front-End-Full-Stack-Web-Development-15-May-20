@@ -1,0 +1,174 @@
+
+
+
+                     <-------------Anchor tag------------------>
+
+
+
+
+	➢  The <a> tag defines a hyperlink,
+
+	➢  Is used to link from one page to another. 
+
+	➢  You have seen that clicking on a link opens a new page may be on the same page or another.
+
+	➢ These web pages are connected using links. 
+
+	➢ They give us the ability to go to a different web page without each time entering its URL.
+
+	    This kind of links are external links 
+	    i.e. they help in connecting to external web pages.
+
+	     Links can also be internal which means that they will be linking the content within the same
+	page. Eg:
+	 link to the top of the page or any link to any specific content on the page.
+
+	  By default, links will appear as follows in all browsers:
+
+	● An unvisited link is underlined and blue
+
+	● A visited link is underlined and purple
+
+	● An active link is underlined and red
+
+
+
+
+	         -:href Attribute:-
+
+
+						   ➢ The most important attribute of the <a> element is the href attribute, which
+					                 indicates the link's destination. 
+					       ➢ the href attribute is used to address the document.
+
+
+					       Eg:
+
+								<h2>A Great place to practice coding</h2>
+								<p> Take daily challenges at
+
+								<a href="http://www.codingninjas.in/students/assignments">Coding ninjas</a>.
+
+								<!-- clickable content for the link is mentioned here -->
+								<!-- any html element can be included here like image, gif, etc. -->
+								</p>
+
+								You will see this:
+
+								An anchor can point to any resource on the Web: an HTML page, an image, a sound	file, a movie, etc. 
+
+								These all are known as external links. 
+
+					NOTE:
+
+					            You need to remember that here also, we can provide relative url of a file as
+
+								a value to href attribute. Eg: href="/home/myPC/Documents/test.html"
+
+
+
+
+
+	-:Relative and Absolute Linking:-
+
+
+
+						●  Relative linking is used to specify local links, 
+
+						      i.e. link to files inside the root folder. 
+
+						●  Absolute linking is used to specify outside links, 
+
+						        i.e. URL of the web pages.
+
+
+					Relative links works relative to the page. So, when a user clicks a relative link, the
+					browser looks for the location of the file relative to the current page. 
+
+
+
+		     	Four situation arises in this case:- 
+
+						● File is present in the same folder :-
+
+							    In this case, the name of the file is provided.  
+
+							    Eg: 
+						        	<a href="relativeFile.html">Click Me</a>,
+
+						        	 will look for the file inside the same folder.
+
+						● File is present in the subfolder :-
+
+							        In this case, the name of the file provided is		
+							        			preceded with the folder names according to hierarchy. 
+
+
+							        			Eg: <a href="subfolder/down/relativeFile.html">Click Me</a>
+
+							 will move to the'subfolder' folder, then to 'down' folder and look for the file inside it. 
+
+						● File is present somewhere in the parent folder :- 
+
+						        In this case, to move one folder above use '../'.
+
+						           Eg:
+
+						                <a href="../relativeFile.html">Click Me</a>
+
+
+							 will move to the parent folder and look for the file inside it. 
+
+						● File is present in another subfolder of parent folder :-
+
+						    This case covers above two cases :-
+
+						      Eg: 
+
+						          <a href="../subfolder/relativeFile.html">Click Me</a>
+
+
+						    will move to the parent folder, then to folder named 'subfolder'   and look 
+						     for the file inside it. 
+
+						    Absolute links provides complete web address of the web page 
+						    where you want to go. 
+							
+							Eg: 
+
+							      <a href="https://www.codingninjas.in/">Click Me</a>
+
+							       will make the browser directly go to the specified URL.
+
+
+
+
+
+
+     --: target Attribute:--
+
+
+        With the target attribute, 
+           you can define where the linked document will be opened.
+
+
+         ➢ The target attribute has the following values:
+
+							  ● _self: 
+							         load the URL into the current tab itself. This is the default.\\
+
+							  ● _blank: 
+							          load the URL into a new tab or browser window. 
+
+							  ● _parent: 
+							          load the URL into the parent browsing context. If there is no parent, this behaves same as _self. 
+
+							  ● _top:
+							           load the URL into the top-level browsing context. If there is no parent, this behaves same as _self. The line below will open the document in a new browser window:
+
+		<a href="http://www.codingninjas.in/students/assignments" target="_blank">Coding Ninjas</a>
+
+
+					NOTE:
+
+					         By default, linked page will be displayed in the current browser window.
