@@ -12,7 +12,7 @@ showAlert();
     showAlert("Hello!");
 
     // msg ---> Arugument 
-    // hello --> Input 
+    // Hello --> Input 
     // you pass mey many argument 
 
     //.............................
