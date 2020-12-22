@@ -2,7 +2,7 @@ function showAlert(){
     alert("Hello!")
 }
 showAlert();
-// function name shold be start form camel case
+// function name shold b start form camel case
 // first letter samll and rest capital
 
      //...................................

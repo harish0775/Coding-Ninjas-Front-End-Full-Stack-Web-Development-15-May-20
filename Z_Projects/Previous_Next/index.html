@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA Satellite</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        
+form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 0;
+    background-image: linear-gradient(-90deg, floralwhite, azure);
+}
+
+form input {
+    padding: 5px;
+    width: 20%;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 30px 2px grey;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#nasa-images img {
+    max-height: 300px;
+    max-width: 100%;
+    min-height: 200px;
+    margin: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <input type="number" placeholder="Enter sol (max. 1000)" />
+        <button type="submit">Get Image</button>
+    </form>
+    <div class="flex-around">
+        <button id="prev">Previous Page</button>
+    <button id="next">Next Page</button>
+    </div>
+
+    <div id="nasa-images" class="flex-center">
+    </div>
+<script>
+    var nasaImages = $("#nasa-images");
+var input = $("form input");
+var prev = $("#prev");
+var next = $("#next");
+var page = 1;
+
+(function () {
+    prev.attr("disabled", "true");
+    next.attr("disabled", "true");
+})();
+
+function updateButtons(photos) {
+    console.log(photos.length);
+    if (page === 1) {
+        prev.attr("disabled", "true");
+        next.removeAttr("disabled");
+    } else if (photos.length === 0) {
+        next.attr("disabled", "true");
+        prev.removeAttr("disabled");
+        --page;
+    } else {
+        prev.removeAttr("disabled");
+        next.removeAttr("disabled");        
+    }
+}
+
+function showPage(page) {
+    let sol = input.val();
+    if( sol === "") {
+        alert("Please fill the field");
+        return;
+    }
+    
+    let url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + sol + "&page=" + page + "&api_key=NBlCLhD21Eud5RxMy1TjZoeJedDa1c1qbsnLMIG2";
+
+    $.get(url, function (data) {
+        let photos = data.photos;
+        updateButtons(photos);
+
+        if (photos.length === 0) {
+            alert("No more images to show...");
+        } else {
+            $("#nasa-images img").remove();
+            for (let photo of photos) {
+                nasaImages.append('<img src="' + photo.img_src + '" alt="' + photo.id + '">');
+            }
+        }
+    });
+}
+
+$("form button").click(function (e) {
+    e.preventDefault();
+    page = 1;
+    showPage(page);
+});
+
+prev.click(function (e) {
+    showPage(--page);
+});
+
+
+next.click(function (e) {
+    showPage(++page);
+});
+</script>
+</body>
+</html>

@@ -111,3 +111,4 @@ h
 //     alert("Google link clcked");
 // });
 
+$( "p" ).hide("slow" );

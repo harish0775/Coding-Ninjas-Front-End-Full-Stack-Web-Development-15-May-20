@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Details</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>body{
+        margin: 0;
+        height: 600px;
+    }
+    
+    form {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+        vertical-align: top;
+        height: 100%;
+        border-right: 1px solid grey;
+    }
+    
+    form h1 {
+        margin-bottom: 50px;
+    }
+    
+    form > div {
+        margin-top: 50px;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+    
+    form label {
+        padding: 5px 0;
+    }
+    
+    form input {
+        padding: 5px;
+    }
+    
+    button {
+        width: 200px;
+        height: 50px;
+        display: block;
+        margin-top: 50px;
+        font-family: monospace;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        box-shadow: 0px 0px 30px 2px grey;
+    }
+    
+    #items {
+        display: inline-block;
+        width: 39%;
+        overflow: auto;
+        height: 100%;
+    }
+    
+    .items {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+    
+    .items:nth-child(even) {
+        background-color: lightgrey;
+    }
+    
+    .highlight {
+        background-color: forestgreen;
+        color: white;
+        padding: 0 10px;
+    }</style>
+</head>
+<body>
+
+    <form action="">
+       <h1>Add Student Data</h1>
+        <div>
+            <label for="roll">Roll No.</label>
+            <input type="number" id="roll" name="roll">
+        </div>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="marks">Marks</label>
+            <input type="number" id="marks" name="marks">
+        </div>
+        <button type="submit">Add Details</button>
+    </form>
+    
+    <div id="items">
+    </div>
+    <script>
+        $("body").height(window.innerHeight-10);
+var items = $("#items");
+
+$("form button").click(function(e) {
+    
+    let roll = $("#roll");
+    let name = $("#name");
+    let marks = $("#marks");
+    
+    let rollVal = roll.val();
+    let nameVal = name.val();
+    let marksVal = marks.val();
+    
+    e.preventDefault();
+    
+    if(rollVal === "" || nameVal === "" || marksVal === "") {
+        
+        alert("Please fill all the fields");
+    
+    } else {
+        
+        let item = '<div class="items">Roll no - <span class="highlight">' + rollVal + '</span> , <span class="highlight">' + nameVal + '</span> have got <span class="highlight">' + marksVal + '</span> marks</div>';
+
+        items.append(item);
+        
+        roll.val("");
+        name.val("");
+        marks.val("");
+    }
+    
+});
+    </script>
+</body>
+</html>

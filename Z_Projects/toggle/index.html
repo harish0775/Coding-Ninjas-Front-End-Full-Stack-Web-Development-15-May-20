@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle View</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <style>* {
+        transition-duration: 0.5s;
+    }
+    
+    #toggle {
+        background-color: white;
+        width: 140px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid black;
+        margin: 50px auto;
+        cursor: pointer;
+    }
+    
+    #circle {
+        width: 38px;
+        height: 38px;
+        background-color: black;
+        border-radius: 50%;
+        margin-top: 1px;
+        margin-left: 1px;
+    }
+    
+    h1 {
+        font-size: 5rem;
+        margin: 100px auto;
+        text-align: center;
+    }
+    
+    .color-white {
+        color: white;
+    }
+    
+    .bck-color-black {
+        background-color: black;
+    }
+    
+    .ml-100 {
+        margin-left: 100px;
+    }</style>
+</head>
+<body>
+   
+   <div id="toggle">
+       <div id="circle"></div>
+   </div>
+   
+   <h1>Hey Dude I create Toggle (; </h1>
+   <script> var toggled = false;
+    var circle = $("#circle");
+    
+    $("#toggle").click(function () {
+    
+        $("h1").toggleClass("color-white");
+        $("body").toggleClass("bck-color-black");
+    
+        if (!toggled) {
+    
+            circle.css("margin-left", "100px");
+            toggled = true;
+    
+        } else {
+    
+            circle.css("margin-left", "1px");
+            toggled = false;
+    
+        }
+    
+    });</script>
+</body>
+</html>

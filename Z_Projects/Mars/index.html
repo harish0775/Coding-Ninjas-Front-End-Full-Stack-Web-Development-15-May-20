@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA Satellite</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        
+form {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 0;
+    background-image: linear-gradient(-90deg, floralwhite, azure);
+}
+
+form label {
+    padding: 5px 0;
+}
+
+form div {
+    width: 20%;
+}
+
+form input {
+    padding: 5px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 30px 2px grey;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#nasa-images img {
+    max-height: 400px;
+    max-width: 100%;
+    min-height: 200px;
+    margin: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <div>
+            <label for="datepicker">Date: &ensp;</label>
+            <input type="text" id="datepicker" placeholder="Enter Date">
+        </div>
+        <button type="submit">Get Images</button>
+    </form>
+
+    <div id="nasa-images" class="flex-center">
+    </div>
+<script>
+    var nasaImages = $("#nasa-images");
+var input = $("#datepicker").datepicker({ dateFormat: 'yy-mm-dd' });
+
+$("form button").click(function (e) {
+    e.preventDefault();
+    
+    var date = input.val();
+    
+    if( date === "") {
+        alert("Please fill the field");
+        return;
+    }
+
+    let url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=" + date + "&api_key=NBlCLhD21Eud5RxMy1TjZoeJedDa1c1qbsnLMIG2";
+    
+    $.get(url, function (data) {
+        let photos = data.photos;
+        
+        if(photos.length === 0 ) {
+            alert("No photos available for this date");
+            return;
+        }
+        
+        $("#nasa-images img").remove();
+
+        for (let photo of photos) {
+            nasaImages.append('<img src="' + photo.img_src + '" alt="' + photo.id + '">');
+        }
+    });
+
+});
+</script>
+</body>
+</html>
